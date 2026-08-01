@@ -1,1 +1,1638 @@
-<h1>hello waseem</h1>
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+<!-- 1. Character encoding MUST be first -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+<!-- 2. Title — kept under 65 characters for Google display -->
+<title>All Error Code Finder | AC, Fridge, Washing Machine, TV Codes</title>
+
+<!-- 3. Primary Meta Tags -->
+<meta name="description" content="Pakistan's #1 free appliance error code database. Search 10,000+ error codes for AC, Refrigerator, Washing Machine, Inverter, TV and Microwave. Instant solutions for Haier, LG, Samsung, Gree, Dawlance and 400+ brands.">
+<meta name="keywords" content="error code finder, AC error codes, refrigerator error codes, washing machine error codes, inverter error codes, TV error codes, microwave error codes, Haier error codes, LG error codes, Samsung error codes, Gree error codes, Dawlance error codes, Pakistan appliance repair, error code E1, error code E5, error code UE, error code F21">
+<meta name="author" content="All Error Code Finder">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<!-- 4. Canonical URL -->
+<link rel="canonical" href="https://acpakistan.netlify.app/">
+
+<!-- Sitemap reference for crawlers -->
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+<!-- 5. Language & Distribution (no duplicates) -->
+<meta name="language" content="English">
+<meta name="distribution" content="global">
+<meta name="rating" content="general">
+<meta name="revisit-after" content="1 day">
+<meta name="audience" content="all">
+
+<!-- 6. Geo Targeting -->
+<meta name="geo.region" content="PK">
+<meta name="geo.placename" content="Pakistan">
+<meta name="geo.position" content="30.3753;69.3451">
+<meta name="ICBM" content="30.3753, 69.3451">
+
+<!-- 7. Open Graph / Facebook (single set) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://acpakistan.netlify.app/">
+<meta property="og:title" content="All Error Code Finder – Pakistan's #1 Appliance Error Code Database">
+<meta property="og:description" content="Pakistan's largest free database of AC, refrigerator, washing machine and inverter error codes with professional troubleshooting guides. 10,000+ codes, 400+ brands.">
+<meta property="og:image" content="https://acpakistan.netlify.app/favicon.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:site_name" content="All Error Code Finder Pakistan">
+<meta property="og:locale" content="en_PK">
+
+<!-- 8. Twitter Card (single set) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="All Error Code Finder – Pakistan's #1 Appliance Error Code Database">
+<meta name="twitter:description" content="Free professional error code database for Pakistani appliances. Step-by-step solutions for Haier, Dawlance, Gree, Orient and more.">
+<meta name="twitter:image" content="https://acpakistan.netlify.app/favicon.png">
+
+<!-- 9. PWA & Mobile -->
+<meta name="theme-color" content="#0d0d0d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="All Error Code Finder">
+
+<!-- 10. Verification -->
+<meta name="google-site-verification" content="MBThP46YqyJ0UCq6RopbZHbd78MQOyIMyOz6T8ppdEc" />
+<meta name="google-adsense-account" content="ca-pub-2779036874557934">
+
+<!-- 11. Resource hints — load before stylesheets -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://ac-erorr-code-master.firebaseapp.com">
+<link rel="preconnect" href="https://www.googleapis.com">
+<link rel="preconnect" href="https://ac-erorr-code-master-default-rtdb.firebaseio.com">
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+
+<!-- 12. Icons & Manifest -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!-- 13. Stylesheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- 14. Scroll-to-top button styles (moved from body to head) -->
+<style>
+/* ========== SCROLL TO TOP BUTTON ========== */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f0b90b 0%, #ff6b00 100%);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(240, 185, 11, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.scroll-top-btn.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.3s ease forwards;
+}
+.scroll-top-btn:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 8px 25px rgba(240, 185, 11, 0.6);
+}
+.scroll-top-btn:active {
+  transform: scale(0.95);
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+  .scroll-top-btn { width: 48px; height: 48px; font-size: 20px; bottom: 20px; right: 15px; }
+}
+@media (max-width: 480px) {
+  .scroll-top-btn { width: 42px; height: 42px; font-size: 18px; bottom: 15px; right: 10px; }
+}
+</style>
+
+<!-- 15. Structured Data — WebSite (single, de-duplicated) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "All Error Code Finder",
+  "alternateName": "All Error Code Finder Pakistan",
+  "url": "https://acpakistan.netlify.app/",
+  "description": "Pakistan's #1 free appliance error code database with 10,000+ error codes for AC, refrigerator, washing machine, inverter, TV and microwave. Trusted by technicians worldwide.",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Technicians, Homeowners, Appliance Repair Professionals, DIY Enthusiasts"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://acpakistan.netlify.app/?search={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "AC Error Codes",              "url": "https://acpakistan.netlify.app/#ac" },
+      { "@type": "ListItem", "position": 2, "name": "Refrigerator Error Codes",    "url": "https://acpakistan.netlify.app/#refrigerator" },
+      { "@type": "ListItem", "position": 3, "name": "Washing Machine Error Codes", "url": "https://acpakistan.netlify.app/#washing-machine" },
+      { "@type": "ListItem", "position": 4, "name": "Inverter Error Codes",        "url": "https://acpakistan.netlify.app/#inverter" },
+      { "@type": "ListItem", "position": 5, "name": "TV Error Codes",              "url": "https://acpakistan.netlify.app/#tv" },
+      { "@type": "ListItem", "position": 6, "name": "Microwave Error Codes",       "url": "https://acpakistan.netlify.app/#microwave" }
+    ]
+  }
+}
+</script>
+
+<!-- 16. Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "All Error Code Finder",
+  "url": "https://acpakistan.netlify.app/",
+  "logo": "https://acpakistan.netlify.app/favicon.png",
+  "description": "Pakistan's #1 free appliance error code database with 10,000+ codes for AC, refrigerator, washing machine, inverter, TV and microwave. Trusted by 50,000+ technicians worldwide.",
+  "foundingDate": "2023",
+  "email": "waseembaloch59@gmail.com",
+  "telephone": "+92-307-1521701",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+92-307-1521701",
+      "contactType": "customer support",
+      "email": "waseembaloch59@gmail.com",
+      "availableLanguage": ["English", "Urdu"]
+    }
+  ],
+  "sameAs": [
+    "https://youtube.com/@offline.apps.studio",
+    "https://wa.me/923071521701"
+  ],
+  "areaServed": "Worldwide"
+}
+</script>
+
+<!-- 17. FAQ Schema for Rich Results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is All Error Code Finder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All Error Code Finder is Pakistan's #1 free appliance error code database with 10,000+ error codes for AC, refrigerator, washing machine, inverter, TV and microwave. Trusted by 50,000+ technicians worldwide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which website has the largest appliance error code database?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All Error Code Finder has the most comprehensive error code database with 10,000+ codes for 400+ brands including Haier, LG, Samsung, Whirlpool, Panasonic, Daikin, Mitsubishi, Gree and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is All Error Code Finder free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, All Error Code Finder is completely free to use. No registration required to search error codes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What appliances does All Error Code Finder support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All Error Code Finder supports Air Conditioners (AC), Refrigerators, Washing Machines, Microwave Ovens, Televisions (TV), and Inverters/UPS across Pakistani and international brands."
+      }
+    }
+  ]
+}
+
+
+<!-- 19. Google Analytics (deferred — does not block render) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EN8W2BMW6E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EN8W2BMW6E');
+</script>
+
+<!-- 20. Google AdSense Auto Ads — required for AdSense approval & monetisation -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2779036874557934" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" title="Go to top" aria-label="Scroll to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+// ========== SCROLL TO TOP BUTTON ==========
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollBtn = document.getElementById('scrollTopBtn');
+  if (!scrollBtn) return;
+
+  function checkScrollPosition() {
+    const mainContent = document.querySelector('.app-main');
+    if (mainContent) {
+      scrollBtn.classList.toggle('show', mainContent.scrollTop > 300);
+    } else {
+      scrollBtn.classList.toggle('show', (window.pageYOffset || document.documentElement.scrollTop) > 300);
+    }
+  }
+
+  window.addEventListener('scroll', checkScrollPosition);
+  const mainContent = document.querySelector('.app-main');
+  if (mainContent) mainContent.addEventListener('scroll', checkScrollPosition);
+
+  scrollBtn.addEventListener('click', function() {
+    const mc = document.querySelector('.app-main');
+    if (mc) {
+      mc.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    scrollBtn.style.transform = 'scale(0.9)';
+    setTimeout(() => { scrollBtn.style.transform = ''; }, 200);
+  });
+
+  setTimeout(checkScrollPosition, 500);
+  window.addEventListener('resize', checkScrollPosition);
+});
+</script>
+
+<!-- LOGIN SCREEN -->
+<div id="loginScreen" style="display: none;" aria-live="polite">
+  <button class="back-btn-login" onclick="goBackFromLogin()" aria-label="Go Back" tabindex="0"><i class="fas fa-arrow-left"></i></button>
+  <div class="login-container">
+    <div class="login-header">
+      <div class="login-logo-1photo" id="loginlogo1photo">
+        <img src="1photo.jpg" alt="ALL ERROR CODE FINDER Logo" id="loginlogo1photoImg">
+      </div>
+      <h1>ALL ERROR CODE FINDER</h1>
+      <p>Pakistani &amp; International Home Appliance Error Codes<br>(AC, Washing Machine, Refrigerator, Inverter, TV)</p>
+    </div>
+    <div class="login-card">
+      <div class="login-message">
+        <h2><i class="fas fa-lock"></i> Secure Access</h2>
+        <p>Sign in to access your profile and preferences</p>
+      </div>
+      <button id="googleLoginBtn" class="google-btn" onclick="handleGoogleLogin()" aria-label="Sign in with Google" tabindex="0">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Sign In" aria-hidden="true">
+        <span>Sign in with Google</span>
+      </button>
+      <div class="login-info">
+        <p><i class="fas fa-check" aria-hidden="true"></i> Save your preferences</p>
+        <p><i class="fas fa-check" aria-hidden="true"></i> Quick access to history</p>
+        <p><i class="fas fa-check" aria-hidden="true"></i> Personalized experience</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="appContainer" class="active">
+
+<!-- Header -->
+<header class="app-header">
+  <div class="header-left">
+    <button class="menu-btn" onclick="toggleSidebar()" aria-label="Open Menu" tabindex="0"><i class="fas fa-bars"></i></button>
+    <div class="logo-icon" onclick="location.replace('https://acpakistan.netlify.app');" style="cursor: pointer;">ALL ERROR CODE FINDER</div>
+  </div>
+  <div class="header-right">
+    <button class="user-profile-btn" id="headerAuthBtn" onclick="handleHeaderAuthClick()" aria-label="User Profile" tabindex="0">
+      <div class="user-avatar" id="userAvatar"><i class="fas fa-user"></i></div>
+    </button>
+  </div>
+</header>
+
+<!-- SIDEBAR -->
+<nav class="sidebar" id="sidebar" aria-label="Main Navigation">
+  <div class="sidebar-header">
+    <button class="sidebar-back-btn" onclick="closeSidebarOnly(event)" aria-label="Back" tabindex="0"><i class="fas fa-chevron-left"></i></button>
+    <h3 style="flex: 1; text-align: center;"><i class="fas fa-book"></i> Articles</h3>
+    <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close Menu" tabindex="0"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="sidebar-content">
+    <a class="sidebar-btn secondary" href="ac-guide.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-snowflake"></i> AC Error Codes Guide
+    </a>
+    <a class="sidebar-btn secondary" href="washing-machine-guide.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-tshirt"></i> Washing Machine Guide
+    </a>
+    <a class="sidebar-btn secondary" href="refrigerator-guide.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-temperature-low"></i> Refrigerator Guide
+    </a>
+    <a class="sidebar-btn secondary" href="microwave-guide.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-fire"></i> Microwave Guide
+    </a>
+    <a class="sidebar-btn secondary" href="tv-guide.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-tv"></i> TV Error Codes Guide
+    </a>
+    <a class="sidebar-btn secondary" href="inverter-guide.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-bolt"></i> Inverter Guide
+    </a>
+    <a class="sidebar-btn secondary" href="haier-ac.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-wind"></i> Haier AC Error Codes
+    </a>
+    <a class="sidebar-btn secondary" href="dawlance-ac.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-fan"></i> Dawlance AC Error Codes
+    </a>
+    <a class="sidebar-btn secondary" href="gree-ac.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-snowflake"></i> Gree AC Error Codes
+    </a>
+    <a class="sidebar-btn secondary" href="lg-ac.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-wind"></i> LG AC Error Codes
+    </a>
+    <a class="sidebar-btn secondary" href="samsung-ac.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-fan"></i> Samsung AC Error Codes
+    </a>
+    <a class="sidebar-btn secondary" href="orient-ac.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-snowflake"></i> Orient AC Error Codes
+    </a>
+    <a class="sidebar-btn secondary" href="pel-ac.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-wind"></i> PEL AC Error Codes
+    </a>
+    <a class="sidebar-btn secondary" href="washing-machine-not-spinning.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-sync-alt"></i> Washer Not Spinning
+    </a>
+    <a class="sidebar-btn secondary" href="refrigerator-not-cooling.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-icicles"></i> Fridge Not Cooling
+    </a>
+    <a class="sidebar-btn secondary" href="ac-not-cooling.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-thermometer-empty"></i> AC Not Cooling
+    </a>
+    <a class="sidebar-btn secondary" href="microwave-not-heating.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-fire-alt"></i> Microwave Not Heating
+    </a>
+    <a class="sidebar-btn secondary" href="tv-no-picture.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-tv"></i> TV No Picture Fix
+    </a>
+    <a class="sidebar-btn secondary" href="inverter-not-charging.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-battery-quarter"></i> Inverter Not Charging
+    </a>
+    <a class="sidebar-btn secondary" href="error-code-e1.html" style="text-decoration: none;" tabindex="0">
+      <i class="fas fa-exclamation-triangle"></i> Error Code E1
+    </a>
+  </div>
+</nav>
+<div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+<!-- MAIN CONTENT -->
+<main class="app-main" id="mainContent">
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/" onclick="showHome(); return false;" tabindex="0" role="link">Home</a>
+    <i class="fas fa-chevron-right"></i>
+    <span id="currentPage">Error Code Search</span>
+  </nav>
+
+  <!-- SEARCH SECTION -->
+  <section class="search-card" aria-labelledby="search-heading">
+    <h1 id="search-heading" class="search-title">
+      <i class="fas fa-search"></i> Search Error Code
+    </h1>
+
+    <div class="tabs-container" role="tablist">
+      <button class="tab-btn active" onclick="switchTab('pakistani')" role="tab" aria-selected="true" aria-controls="pakistani" tabindex="0">🇵🇰 Pakistani</button>
+      <button class="tab-btn" onclick="switchTab('international')" role="tab" aria-selected="false" aria-controls="international" tabindex="0">🌐 International</button>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="applianceSelect"><i class="fas fa-plug"></i> Select Appliance</label>
+      <select id="applianceSelect" class="form-select" onchange="loadCategoryData()">
+        <option value="ac">Air Conditioner (AC)</option>
+        <option value="washing_machine">Washing Machine</option>
+        <option value="refrigerator">Refrigerator</option>
+        <option value="microwave">Microwave</option>
+        <option value="tv">TV</option>
+        <option value="inverter">Inverter / UPS</option>
+      </select>
+    </div>
+
+    <!-- PAKISTANI TAB -->
+    <div id="pakistani" class="tab-content active" role="tabpanel">
+      <div class="form-group">
+        <label class="form-label" for="pakistaniBrand"><i class="fas fa-tag"></i> Select Brand</label>
+        <select id="pakistaniBrand" class="form-select">
+          <option value="">Select Pakistani Brand</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="pakistaniCode"><i class="fas fa-code"></i> Error Code</label>
+        <input type="text" id="pakistaniCode" class="form-input"
+               placeholder="Enter Error Code (e.g. E1, E5)"
+               onfocus="adjustForKeyboard()">
+      </div>
+      <button class="search-btn" onclick="searchError('pakistani')" tabindex="0">
+        <i class="fas fa-search"></i> Search Error Code
+      </button>
+    </div>
+
+    <!-- INTERNATIONAL TAB -->
+    <div id="international" class="tab-content" role="tabpanel">
+      <div class="form-group">
+        <label class="form-label" for="internationalBrand"><i class="fas fa-tag"></i> Select Brand</label>
+        <select id="internationalBrand" class="form-select">
+          <option value="">Select International Brand</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="internationalCode"><i class="fas fa-code"></i> Error Code</label>
+        <input type="text" id="internationalCode" class="form-input"
+               placeholder="Enter Error Code (e.g. E1, U0)"
+               onfocus="adjustForKeyboard()">
+      </div>
+      <button class="search-btn" onclick="searchError('international')" tabindex="0">
+        <i class="fas fa-search"></i> Search Error Code
+      </button>
+    </div>
+  </section>
+
+  <!-- RESULTS AREA -->
+  <div id="resultArea" aria-live="polite">
+    <div class="initial-state">
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <h2>Ready to Help</h2>
+      <p>Select a brand and enter an error code to get instant professional diagnosis</p>
+    </div>
+  </div>
+
+  <!-- INSTALL BUTTON -->
+  <div style="text-align:center; margin:30px 0;">
+    <button id="installBtn" tabindex="0">Download Free App</button>
+  </div>
+
+  <!-- 20 ARTICLES SECTION -->
+  <section class="articles-section" id="articles-section">
+    <h2><i class="fas fa-newspaper"></i> Latest Articles &amp; Guides</h2>
+
+    <div class="articles-grid" id="articles-grid">
+      <!-- Article 1: Air Conditioner (AC) -->
+      <a class="article-card" href="ac-guide.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-snowflake"></i></div>
+          <img src="images/ac-guide.jpg" alt="Air Conditioner Error Code Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Complete Air Conditioner (AC) Error Code Guide</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 2: Washing Machine -->
+      <a class="article-card" href="washing-machine-guide.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-tshirt"></i></div>
+          <img src="images/washing-machine-guide.jpg" alt="Washing Machine Error Code Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Washing Machine Error Codes – Complete Troubleshooting</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 3: Refrigerator -->
+      <a class="article-card" href="refrigerator-guide.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-temperature-low"></i></div>
+          <img src="images/refrigerator-guide.jpg" alt="Refrigerator Error Code Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Refrigerator Error Codes &amp; Cooling Problems Solved</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 4: Microwave -->
+      <a class="article-card" href="microwave-guide.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-fire"></i></div>
+          <img src="images/microwave-guide.jpg" alt="Microwave Oven Error Code Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Microwave Oven Error Codes – Complete Guide</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 5: TV -->
+      <a class="article-card" href="tv-guide.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-tv"></i></div>
+          <img src="images/tv-guide.jpg" alt="TV Error Code Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>TV Error Codes – LED, LCD, Smart TV Troubleshooting</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 6: Inverter / UPS -->
+      <a class="article-card" href="inverter-guide.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-bolt"></i></div>
+          <img src="images/inverter-guide.jpg" alt="Inverter and UPS Error Code Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Inverter &amp; UPS Error Codes – Complete Troubleshooting</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 7: Haier AC Error Codes -->
+      <a class="article-card" href="haier-ac.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-wind"></i></div>
+          <img src="images/haier-ac.jpg" alt="Haier AC Error Codes List" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Haier AC Error Codes – Complete List E1 to E9</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 8: Dawlance AC Error Codes -->
+      <a class="article-card" href="dawlance-ac.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-fan"></i></div>
+          <img src="images/dawlance-ac.jpg" alt="Dawlance AC Error Codes Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Dawlance AC Error Codes – Complete Troubleshooting</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 9: Gree AC Error Codes -->
+      <a class="article-card" href="gree-ac.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-snowflake"></i></div>
+          <img src="images/gree-ac.jpg" alt="Gree AC Error Codes Complete Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Gree AC Error Codes – Complete Guide with Solutions</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 10: LG AC Error Codes -->
+      <a class="article-card" href="lg-ac.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-wind"></i></div>
+          <img src="images/lg-ac.jpg" alt="LG AC Error Codes Troubleshooting" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>LG AC Error Codes – Complete Troubleshooting Guide</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 11: Samsung AC Error Codes -->
+      <a class="article-card" href="samsung-ac.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-fan"></i></div>
+          <img src="images/samsung-ac.gif" alt="Samsung AC Error Codes List" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Samsung AC Error Codes – Complete List &amp; Solutions</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 12: Orient AC Error Codes -->
+      <a class="article-card" href="orient-ac.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-snowflake"></i></div>
+          <img src="images/orient-ac.jpg" alt="Orient AC Error Codes Pakistan" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Orient AC Error Codes – Complete Guide for Pakistan</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 13: PEL AC Error Codes -->
+      <a class="article-card" href="pel-ac.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-wind"></i></div>
+          <img src="images/pel-ac.jpg" alt="PEL AC Error Codes Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>PEL AC Error Codes – Complete Troubleshooting Guide</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 14: Washing Machine Not Spinning -->
+      <a class="article-card" href="washing-machine-not-spinning.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-sync-alt"></i></div>
+          <img src="images/washing-machine-not-spinning.jpg" alt="Washing Machine Not Spinning Fix" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Washing Machine Not Spinning? 10 Easy Fixes</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 15: Refrigerator Not Cooling -->
+      <a class="article-card" href="refrigerator-not-cooling.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-icicles"></i></div>
+          <img src="images/refrigerator-not-cooling.jpg" alt="Refrigerator Not Cooling Solutions" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Refrigerator Not Cooling? 15 Common Causes &amp; Fixes</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 16: AC Not Cooling -->
+      <a class="article-card" href="ac-not-cooling.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-thermometer-empty"></i></div>
+          <img src="images/ac-not-cooling.jpg" alt="AC Not Cooling Troubleshooting" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>AC Not Cooling? Complete Troubleshooting Guide</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 17: Microwave Not Heating -->
+      <a class="article-card" href="microwave-not-heating.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-fire-alt"></i></div>
+          <img src="images/microwave-not-heating.jpg" alt="Microwave Not Heating Fix Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Microwave Not Heating? 8 Common Problems &amp; Fixes</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 18: TV No Picture -->
+      <a class="article-card" href="tv-no-picture.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-tv"></i></div>
+          <img src="images/tv-no-picture.jpg" alt="TV No Picture Fix Guide" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>TV Has Sound But No Picture? Complete Fix Guide</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 19: Inverter Not Charging -->
+      <a class="article-card" href="inverter-not-charging.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-battery-quarter"></i></div>
+          <img src="images/inverter-not-charging.jpg" alt="Inverter Not Charging Solutions" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Inverter Not Charging? 10 Common Problems &amp; Solutions</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Article 20: Error Code E1 Meaning -->
+      <a class="article-card" href="error-code-e1.html">
+        <div class="article-image">
+          <div class="article-img-fallback"><i class="fas fa-exclamation-triangle"></i></div>
+          <img src="images/error-code-e1.jpg" alt="Error Code E1 Meaning and Fix" loading="lazy">
+        </div>
+        <div class="article-content">
+          <h3>Error Code E1 – What Does It Mean &amp; How to Fix It?</h3>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Disclaimer and Trust Elements -->
+  <section class="guide-section" style="background: rgba(255, 71, 87, 0.05); border-color: var(--error);">
+    <h2 style="color: var(--error);"><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h2>
+    <p>The information provided on ALL ERROR CODE FINDER is for general informational purposes only. All troubleshooting steps and solutions are based on our experience and research but should be performed at your own risk. Electrical appliances can be dangerous – always prioritize safety and consult certified professionals for complex repairs.</p>
+    <p>We are not responsible for any damage to appliances, property damage, or personal injury resulting from following our troubleshooting guides. When in doubt, always contact a licensed technician. Some repairs may void your appliance warranty – check your warranty terms before attempting repairs yourself.</p>
+    <p><strong>Contact Email:</strong> <a href="mailto:waseembaloch59@gmail.com" style="color: var(--accent-gold);">waseembaloch59@gmail.com</a> – For suggestions, corrections, or professional consultation.</p>
+    <p><strong>Last Updated:</strong> <span id="disclaimerDate"></span></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="app-footer">
+    <div class="footer-category-links">
+      <a href="category/ac.html" onclick="filterByCategory('ac'); return false;" title="AC Error Codes" tabindex="0">AC Error Codes</a>
+      <a href="category/washing-machine.html" onclick="filterByCategory('washing_machine'); return false;" title="Washing Machine Error Codes" tabindex="0">Washing Machine</a>
+      <a href="category/refrigerator.html" onclick="filterByCategory('refrigerator'); return false;" title="Refrigerator Error Codes" tabindex="0">Refrigerator</a>
+      <a href="category/inverter.html" onclick="filterByCategory('inverter'); return false;" title="Inverter Error Codes" tabindex="0">Inverter</a>
+      <a href="category/microwave.html" onclick="filterByCategory('microwave'); return false;" title="Microwave Error Codes" tabindex="0">Microwave</a>
+      <a href="category/tv.html" onclick="filterByCategory('tv'); return false;" title="TV Error Codes" tabindex="0">TV</a>
+    </div>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="disclaimer.html">Disclaimer</a> |
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+      <div class="copyright">
+        <span>&copy; <span id="currentYear"></span> ALL ERROR CODE FINDER. All rights reserved. Professional appliance diagnostic tool trusted by technicians across Pakistan. All information provided for educational purposes only.</span>
+      </div>
+    </div>
+  </footer>
+</main>
+</div>
+
+<!-- USER PROFILE MODAL -->
+<div class="modal-overlay" id="userModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-user-circle"></i> User Profile</h2>
+      <button class="modal-close" onclick="closeUserModal()" tabindex="0"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="profile-section">
+      <div class="profile-avatar" id="modalAvatar">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="profile-name" id="modalUsername">User</div>
+      <div class="profile-email" id="modalEmail">email@example.com</div>
+      <div class="profile-status" id="profileStatus">
+        <span style="color: var(--success);"><i class="fas fa-circle"></i> Online</span>
+      </div>
+    </div>
+    <button class="logout-btn" onclick="handleLogout()" tabindex="0">
+      <i class="fas fa-sign-out-alt"></i> Logout
+    </button>
+  </div>
+</div>
+
+<!-- ABOUT MODAL -->
+<div class="modal-overlay" id="aboutModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-info-circle"></i> About Us</h2>
+      <button class="modal-close" onclick="closeAboutModal()" tabindex="0"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="content-header" style="text-align: center; margin-bottom: 20px;">
+        <h1 style="font-size: 28px; background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange)); -webkit-background-clip: text; background-clip: text; color: transparent;">About ALL ERROR CODE FINDER</h1>
+        <p style="color: var(--text-gray);">Professional online diagnostic tool for technicians and users to quickly identify and fix appliance error codes</p>
+      </div>
+
+      <h2><i class="fas fa-star"></i> Our Mission</h2>
+      <p><strong>ALL ERROR CODE FINDER</strong> is a powerful online diagnostic platform designed specifically for the Pakistani market and international users to quickly diagnose and troubleshoot appliance error codes. Our mission is to simplify appliance repair and maintenance by providing instant access to comprehensive error code databases and professional solutions.</p>
+      <p>We understand that dealing with appliance errors can be frustrating and time-consuming. That's why we've created this tool to provide instant, accurate solutions at your fingertips.</p>
+
+      <h2><i class="fas fa-th-large"></i> Comprehensive Database Coverage</h2>
+      <p>Our extensive database covers error codes for 6 major appliance categories with detailed brand coverage:</p>
+
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon"><i class="fas fa-snowflake"></i></div>
+          <h3>Air Conditioners</h3>
+          <p>Complete error code database for international &amp; Pakistani AC brands</p>
+          <div class="category-count">67+ Brands</div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon"><i class="fas fa-tshirt"></i></div>
+          <h3>Washing Machines</h3>
+          <p>Washer &amp; dryer error codes with detailed troubleshooting</p>
+          <div class="category-count">62+ Brands</div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon"><i class="fas fa-refrigerator"></i></div>
+          <h3>Refrigerators</h3>
+          <p>Refrigerator &amp; freezer error codes with professional solutions</p>
+          <div class="category-count">76+ Brands</div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon"><i class="fas fa-microwave"></i></div>
+          <h3>Microwaves</h3>
+          <p>Microwave oven error codes with step-by-step repair guides</p>
+          <div class="category-count">75+ Brands</div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon"><i class="fas fa-tv"></i></div>
+          <h3>Televisions</h3>
+          <p>TV and display error codes with technical solutions</p>
+          <div class="category-count">57+ Brands</div>
+        </div>
+        <div class="category-card">
+          <div class="category-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Inverters</h3>
+          <p>Power inverter error codes with electrical troubleshooting</p>
+          <div class="category-count">60+ Brands</div>
+        </div>
+      </div>
+
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-number">400+</div>
+          <div class="stat-label">Total Brands</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Appliance Categories</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">Error Codes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Online Access</div>
+        </div>
+      </div>
+
+      <h2><i class="fas fa-bullseye"></i> Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-database"></i></div>
+          <h3>Massive Database</h3>
+          <p>Access thousands of error codes for both Pakistani and international brands across all appliance categories with regular updates and additions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Instant Diagnosis</h3>
+          <p>Get real-time error diagnosis with detailed explanations and professional troubleshooting steps within seconds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Works seamlessly on all devices - desktop, tablet, and mobile phones with optimized performance and user experience.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+          <h3>Regular Updates</h3>
+          <p>Our database is constantly updated with new error codes and solutions to ensure you have the most current information.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-users"></i></div>
+          <h3>Community Driven</h3>
+          <p>Benefit from solutions provided by professional technicians and experienced users from across Pakistan and worldwide.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Secure &amp; Private</h3>
+          <p>Your searches and data are kept private. We don't sell your information to third parties. Your privacy is our priority.</p>
+        </div>
+      </div>
+
+      <h2><i class="fas fa-history"></i> Platform Information</h2>
+      <p><strong>Current Version:</strong> 3.0.0 Professional</p>
+      <p><strong>Last Updated:</strong> <span id="aboutDate"></span></p>
+      <p><strong>Database Size:</strong> 10,000+ error codes across 400+ brands</p>
+      <p><strong>Supported Brands:</strong> 400+ Pakistani and International brands</p>
+      <p><strong>Categories:</strong> 6 major appliance categories</p>
+      <p><strong>Accessibility:</strong> 100% Free online access</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT MODAL -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-headset"></i> Contact Us</h2>
+      <button class="modal-close" onclick="closeContactModal()" tabindex="0"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="content-header" style="text-align: center; margin-bottom: 20px;">
+        <h1 style="font-size: 28px; background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange)); -webkit-background-clip: text; background-clip: text; color: transparent;">Contact Us</h1>
+        <p style="color: var(--text-gray);">Get in touch for suggestions, feedback, or to help us improve our diagnostic tool.</p>
+      </div>
+
+      <div class="profile-section" style="text-align: center; padding: 20px 0;">
+        <div class="profile-avatar" style="width: 120px; height: 120px; border-radius: 50%; border: 4px solid var(--accent-gold); margin: 0 auto 20px; overflow: hidden; background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));">
+          <img src="photo.jpg" alt="Waseem Baloch - Lead Technician" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <h2 style="font-size: 24px; font-weight: 800; color: var(--accent-gold); margin-bottom: 10px;">Waseem Baloch</h2>
+        <span class="profile-title" style="color: var(--accent-orange); font-size: 18px; font-weight: 600; margin-bottom: 20px; display: block;">Lead Technician &amp; Platform Manager</span>
+        <p class="profile-bio" style="color: var(--text-gray); max-width: 500px; margin: 0 auto 25px; font-size: 15px; line-height: 1.7;">
+          With over 10 years of experience in appliance repair and troubleshooting across Pakistan.
+          Specializing in AC, washing machine, refrigerator, and inverter error diagnostics.
+        </p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/923071521701" target="_blank" rel="noopener noreferrer" class="contact-link" style="display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: #000; padding: 10px 20px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 14px;" tabindex="0">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="mailto:waseembaloch59@gmail.com" class="contact-link" style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange)); color: #000; padding: 10px 20px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 14px;" tabindex="0">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+
+      <h2><i class="fas fa-comments"></i> How Can We Help You?</h2>
+      <div class="contact-grid">
+        <div class="contact-card" style="padding: 20px;">
+          <div class="contact-icon" style="width: 60px; height: 60px; font-size: 24px;"><i class="fas fa-lightbulb"></i></div>
+          <h3>Suggestions &amp; Feedback</h3>
+          <p>Share your suggestions for new features or improvements.</p>
+          <a href="mailto:waseembaloch59@gmail.com?subject=Suggestion for ALL ERROR CODE FINDER" class="contact-link" style="padding: 8px 15px; font-size: 13px;" tabindex="0">
+            <i class="fas fa-paper-plane"></i> Share
+          </a>
+        </div>
+        <div class="contact-card" style="padding: 20px;">
+          <div class="contact-icon" style="width: 60px; height: 60px; font-size: 24px;"><i class="fas fa-database"></i></div>
+          <h3>Database Improvements</h3>
+          <p>Report missing error codes or suggest corrections.</p>
+          <a href="mailto:waseembaloch59@gmail.com?subject=Database Improvement" class="contact-link" style="padding: 8px 15px; font-size: 13px;" tabindex="0">
+            <i class="fas fa-edit"></i> Report
+          </a>
+        </div>
+        <div class="contact-card" style="padding: 20px;">
+          <div class="contact-icon" style="width: 60px; height: 60px; font-size: 24px;"><i class="fas fa-tools"></i></div>
+          <h3>Technical Support</h3>
+          <p>Need help using the diagnostic tool?</p>
+          <a href="https://wa.me/923071521701?text=Hello!%20I%20need%20technical%20support%20for%20Error%20Code%20Master" target="_blank" rel="noopener noreferrer" class="contact-link" style="padding: 8px 15px; font-size: 13px;" tabindex="0">
+            <i class="fas fa-headset"></i> Support
+          </a>
+        </div>
+      </div>
+
+      <h2><i class="fas fa-address-card"></i> Contact Information</h2>
+      <div class="contact-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="contact-card" style="padding: 15px;">
+          <div class="contact-icon" style="background: #25D366; width: 50px; height: 50px; font-size: 22px;"><i class="fab fa-whatsapp"></i></div>
+          <h3 style="font-size: 18px;">WhatsApp</h3>
+          <p style="font-size: 13px;">+92 307 1521701</p>
+          <a href="https://wa.me/923071521701" target="_blank" rel="noopener noreferrer" class="contact-link" style="background: #25D366; padding: 6px 12px; font-size: 12px;" tabindex="0">
+            <i class="fab fa-whatsapp"></i> Chat
+          </a>
+        </div>
+        <div class="contact-card" style="padding: 15px;">
+          <div class="contact-icon" style="width: 50px; height: 50px; font-size: 22px;"><i class="fas fa-envelope"></i></div>
+          <h3 style="font-size: 18px;">Email</h3>
+          <p style="font-size: 13px;">waseembaloch59@gmail.com</p>
+          <a href="mailto:waseembaloch59@gmail.com" class="contact-link" style="padding: 6px 12px; font-size: 12px;" tabindex="0">
+            <i class="fas fa-paper-plane"></i> Send
+          </a>
+        </div>
+        <div class="contact-card" style="padding: 15px;">
+          <div class="contact-icon" style="background: #FF0000; width: 50px; height: 50px; font-size: 22px;"><i class="fab fa-youtube"></i></div>
+          <h3 style="font-size: 18px;">YouTube</h3>
+          <p style="font-size: 13px;">@offline.apps.studio</p>
+          <a href="https://youtube.com/@offline.apps.studio" target="_blank" rel="noopener noreferrer" class="contact-link" style="background: #FF0000; padding: 6px 12px; font-size: 12px;" tabindex="0">
+            <i class="fab fa-youtube"></i> Visit
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRIVACY MODAL -->
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-shield-alt"></i> Privacy Policy</h2>
+      <button class="modal-close" onclick="closePrivacyModal()" tabindex="0"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="content-header" style="text-align: center; margin-bottom: 20px;">
+        <h1 style="font-size: 28px; background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange)); -webkit-background-clip: text; background-clip: text; color: transparent;">Privacy Policy</h1>
+        <p style="color: var(--text-gray);">Your privacy is important to us. This policy outlines how we collect, use, and protect your information.</p>
+      </div>
+
+      <h2><i class="fas fa-info-circle"></i> Information We Collect</h2>
+      <p>We may collect personal information that you voluntarily provide to us when you:</p>
+      <ul>
+        <li>Use our online diagnostic tool</li>
+        <li>Subscribe to our newsletter or updates</li>
+        <li>Fill out forms or participate in surveys</li>
+        <li>Contact us through our communication channels</li>
+        <li>Submit suggestions or feedback</li>
+      </ul>
+      <p>This information may include your name, email address, phone number, and any other details you choose to provide.</p>
+
+      <h2><i class="fas fa-cookie"></i> Cookies and Tracking Technologies</h2>
+      <p>We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier.</p>
+      <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our service.</p>
+      <p>We also use Google AdSense to display advertisements. Google AdSense uses cookies to serve ads based on your prior visits to this and other websites. You may opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold);">Google Ads Settings</a>.</p>
+
+      <h2><i class="fas fa-share-alt"></i> How We Use Your Information</h2>
+      <p>We use the information we collect in various ways, including to:</p>
+      <ol>
+        <li>Provide, operate, and maintain our website</li>
+        <li>Improve, personalize, and expand our website</li>
+        <li>Understand and analyze how you use our website</li>
+        <li>Develop new features and functionality</li>
+        <li>Communicate with you about updates and improvements</li>
+        <li>Send you emails, updates, and other information</li>
+        <li>Enhance our error code database based on user feedback</li>
+      </ol>
+
+      <h2><i class="fas fa-lock"></i> Data Security</h2>
+      <p>The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
+      <p>We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+      <h2><i class="fas fa-gavel"></i> Third-Party Services</h2>
+      <p>We may employ third-party companies and individuals due to the following reasons:</p>
+      <ul>
+        <li>To facilitate our Service</li>
+        <li>To provide the Service on our behalf</li>
+        <li>To perform Service-related services</li>
+        <li>To assist us in analyzing how our Service is used</li>
+      </ul>
+      <p>These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS MODAL -->
+<div class="modal-overlay" id="termsModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-file-contract"></i> Terms &amp; Conditions</h2>
+      <button class="modal-close" onclick="closeTermsModal()" tabindex="0"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="content-header" style="text-align: center; margin-bottom: 20px;">
+        <h1 style="font-size: 28px; background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange)); -webkit-background-clip: text; background-clip: text; color: transparent;">Terms &amp; Conditions</h1>
+        <p style="color: var(--text-gray);">Please read these Terms &amp; Conditions carefully before using ALL ERROR CODE FINDER.</p>
+      </div>
+
+      <h2><i class="fas fa-check-circle"></i> Acceptance of Terms</h2>
+      <p>By accessing and using ALL ERROR CODE FINDER (the "Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use this Service.</p>
+
+      <div class="terms-highlight">
+        <p><i class="fas fa-exclamation-circle"></i> <strong>Important:</strong> These terms constitute a legally binding agreement between you and ALL ERROR CODE FINDER regarding your use of the Service.</p>
+      </div>
+
+      <h2><i class="fas fa-user"></i> User Responsibilities</h2>
+      <p>As a user of ALL ERROR CODE FINDER, you agree to:</p>
+      <ol>
+        <li>Use the Service only for lawful purposes</li>
+        <li>Provide accurate information when using our diagnostic tools</li>
+        <li>Not attempt to gain unauthorized access to any part of the Service</li>
+        <li>Not interfere with or disrupt the Service or servers</li>
+        <li>Not use the Service to transmit any malicious code or harmful content</li>
+        <li>Respect intellectual property rights of ALL ERROR CODE FINDER and third parties</li>
+      </ol>
+      <p>Violation of these responsibilities may result in termination of your access to the Service.</p>
+
+      <h2><i class="fas fa-tools"></i> Service Disclaimer</h2>
+      <p>ALL ERROR CODE FINDER provides diagnostic information and troubleshooting suggestions for appliance error codes. However, we make no warranties regarding:</p>
+      <ul>
+        <li>The accuracy, completeness, or reliability of diagnostic information</li>
+        <li>The effectiveness of suggested troubleshooting steps</li>
+        <li>The compatibility of solutions with your specific appliance model</li>
+        <li>Uninterrupted or error-free operation of the Service</li>
+      </ul>
+      <p>The Service is provided "as is" and "as available" without any warranty of any kind.</p>
+
+      <div class="terms-highlight">
+        <p><i class="fas fa-exclamation-triangle"></i> <strong>Safety Notice:</strong> Always consult your appliance manual and consider professional repair services for complex issues. Electrical appliances can be dangerous if improperly handled.</p>
+      </div>
+
+      <h2><i class="fas fa-balance-scale"></i> Limitation of Liability</h2>
+      <p>To the maximum extent permitted by applicable law, ALL ERROR CODE FINDER shall not be liable for:</p>
+      <ul>
+        <li>Any indirect, incidental, special, consequential or punitive damages</li>
+        <li>Loss of profits, data, use, goodwill, or other intangible losses</li>
+        <li>Damages resulting from your use or inability to use the Service</li>
+        <li>Any errors or omissions in the content provided by the Service</li>
+        <li>Any damage to appliances resulting from following troubleshooting advice</li>
+      </ul>
+
+      <h2><i class="fas fa-edit"></i> User Submissions</h2>
+      <p>When you submit content to ALL ERROR CODE FINDER:</p>
+      <ol>
+        <li>You grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, and distribute your content</li>
+        <li>You represent that you own or have the necessary rights to submit the content</li>
+        <li>Your submissions must not violate any third-party rights or be unlawful</li>
+        <li>We reserve the right to remove any user submissions at our discretion</li>
+      </ol>
+
+      <h2><i class="fas fa-sync-alt"></i> Changes to Terms</h2>
+      <p>We reserve the right to modify or replace these Terms at any time. Your continued use of the Service after any such changes constitutes your acceptance of the new Terms.</p>
+
+      <div class="terms-highlight">
+        <p><i class="fas fa-calendar-alt"></i> <strong>Last Updated:</strong> <span id="termsDate"></span></p>
+      </div>
+
+      <h2><i class="fas fa-gavel"></i> Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of Pakistan, without regard to its conflict of law provisions.</p>
+    </div>
+  </div>
+</div>
+
+<!-- DISCLAIMER MODAL -->
+<div class="modal-overlay" id="disclaimerModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-exclamation-triangle"></i> Disclaimer</h2>
+      <button class="modal-close" onclick="closeDisclaimerModal()" tabindex="0"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="content-header" style="text-align: center; margin-bottom: 20px;">
+        <h1 style="font-size: 28px; background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange)); -webkit-background-clip: text; background-clip: text; color: transparent;">Important Disclaimer</h1>
+        <p style="color: var(--text-gray);">Please read this disclaimer carefully before using our service.</p>
+      </div>
+
+      <h2><i class="fas fa-info-circle"></i> General Information</h2>
+      <p>The information provided by ALL ERROR CODE FINDER on this website is for general informational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site.</p>
+
+      <h2><i class="fas fa-tools"></i> Professional Disclaimer</h2>
+      <p>The Site cannot and does not contain professional appliance repair advice. The appliance diagnostic and troubleshooting information is provided for general informational and educational purposes only and is not a substitute for professional advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.</p>
+
+      <h2><i class="fas fa-external-link-alt"></i> External Links Disclaimer</h2>
+      <p>The Site may contain links to other websites. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE.</p>
+
+      <h2><i class="fas fa-exclamation-circle"></i> Errors and Omissions Disclaimer</h2>
+      <p>The information given by the Site is for general guidance on matters of interest only. Even if we take every precaution to ensure that the content of the Site is both current and accurate, errors can occur. We are not responsible for any errors or omissions, or for the results obtained from the use of this information.</p>
+
+      <h2><i class="fas fa-user-shield"></i> Fair Use Disclaimer</h2>
+      <p>We may use copyrighted material which has not always been specifically authorized by the copyright owner. We believe this constitutes a "fair use" of any such copyrighted material as provided for in section 107 of the US Copyright Law. If you wish to use copyrighted material from this site for purposes of your own that go beyond fair use, you must obtain permission from the copyright owner.</p>
+
+      <h2><i class="fas fa-clock"></i> "Use at Your Own Risk" Disclaimer</h2>
+      <p>All information in the Site is provided "as is", with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied.</p>
+
+      <div class="terms-highlight">
+        <p><i class="fas fa-calendar-alt"></i> <strong>Disclaimer Last Updated:</strong> <span id="disclaimerDate2"></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUPPORT MODAL -->
+<div class="modal-overlay" id="supportModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-headset"></i> Support &amp; Contact</h2>
+      <button class="modal-close" onclick="closeSupportModal()" tabindex="0"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="support-section">
+      <div class="support-photo" id="supportPhoto">
+        <img src="photo.jpg" alt="Waseem Baloch - Support Person" id="supportPhotoImg">
+      </div>
+      <div class="support-name" id="supportName">Waseem Baloch</div>
+      <div class="support-title" id="supportTitle">Lead Technician &amp; Support</div>
+      <div class="support-details">
+        <div class="detail-item">
+          <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+          <div class="detail-content">
+            <h4>Email</h4>
+            <p id="supportEmail">waseembaloch59@gmail.com</p>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="detail-content">
+            <h4>WhatsApp</h4>
+            <p id="supportWtsp">+92 307 1521701</p>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="detail-content">
+            <h4>Location</h4>
+            <p>Pakistan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUGGESTION MODAL -->
+<div class="modal-overlay" id="suggestionModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-paper-plane"></i> Contact &amp; Suggestions</h2>
+      <button class="modal-close" onclick="closeSuggestionModal()" tabindex="0">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin-bottom:15px;color:#ccc;font-size:14px;">
+        Have a suggestion, need Help? Fill out the form below and we'll contact you as soon as possible.
+        <br><br>
+        <strong>Note:</strong> For AC support, please mention your AC brand and error code.
+      </p>
+      <div class="form-group">
+        <label class="form-label"><i class="fas fa-user"></i> Your Name</label>
+        <input type="text" class="form-input" id="suggestionName" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label"><i class="fas fa-envelope"></i> Email Address</label>
+        <input type="email" class="form-input" id="suggestionEmail" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label"><i class="fas fa-mobile-alt"></i> Mobile / WhatsApp Number</label>
+        <input type="tel" class="form-input" id="suggestionMobile" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label class="form-label"><i class="fas fa-map-marker-alt"></i> City / Location</label>
+        <input type="text" class="form-input" id="suggestionCity" placeholder="Example: Karachi, Lahore, Islamabad">
+      </div>
+      <div class="form-group">
+        <label class="form-label"><i class="fas fa-tag"></i> Subject</label>
+        <select class="form-input" id="suggestionSubject">
+          <option value="">Select a subject</option>
+          <option value="suggestion">Feature Suggestion</option>
+          <option value="bug">Report a Bug</option>
+          <option value="support">New Brand Adding &amp; Error Codes</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label"><i class="fas fa-comment-dots"></i> Your Message</label>
+        <textarea class="form-input" id="suggestionText" rows="5" placeholder="Write your message here..." style="resize: vertical;" required></textarea>
+      </div>
+      <button class="search-btn" onclick="submitSuggestion()" tabindex="0">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+      <hr style="margin:20px 0;border-color:#333;">
+      <p style="font-size:13px;color:#aaa;line-height:1.6;">
+        <strong>Response Time:</strong> Within 24 hours on business days.<br><br>
+        <strong>Support Disclaimer:</strong><br>
+        We provide diagnostic and software support only. Physical AC repair depends on your local technician.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- NOTIFICATION -->
+<div id="notification" class="notification"></div>
+
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-storage-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics-compat.js"></script>
+
+<script>
+  // ========== GLOBAL FUNCTIONS ==========
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const yearEl = document.getElementById("currentYear");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const dateString = currentDate.toLocaleDateString('en-US', options);
+
+    const ids = ['aboutDate', 'termsDate', 'disclaimerDate', 'disclaimerDate2'];
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = dateString;
+    });
+
+    loadPakistaniBrands();
+    loadInternationalBrands();
+  });
+
+  function loadPakistaniBrands() {
+    const pakistaniBrands = [
+      "Haier", "Dawlance", "Gree", "Orient", "Pel", "Kenwood", "Changhong Ruba", "ECStar", "Master", "Super Asia"
+    ];
+    const select = document.getElementById('pakistaniBrand');
+    if (select) {
+      pakistaniBrands.sort().forEach(brand => {
+        const option = document.createElement('option');
+        option.value = brand.toLowerCase().replace(/\s+/g, '_');
+        option.textContent = brand;
+        select.appendChild(option);
+      });
+    }
+  }
+
+  function loadInternationalBrands() {
+    const internationalBrands = [
+      "LG", "Samsung", "Whirlpool", "Panasonic", "Daikin", "Mitsubishi", "Toshiba", "Sharp", "Sony", "Bosch", "Electrolux", "Hitachi"
+    ];
+    const select = document.getElementById('internationalBrand');
+    if (select) {
+      internationalBrands.sort().forEach(brand => {
+        const option = document.createElement('option');
+        option.value = brand.toLowerCase().replace(/\s+/g, '_');
+        option.textContent = brand;
+        select.appendChild(option);
+      });
+    }
+  }
+
+  // PWA Install
+  let deferredPrompt = null;
+
+  window.addEventListener('load', () => {
+    const installBtn = document.getElementById('installBtn');
+    if (!installBtn) return;
+
+    installBtn.style.display = 'none';
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      installBtn.style.display = 'inline-block';
+    });
+
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const choice = await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      installBtn.style.display = 'none';
+    });
+
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      installBtn.style.display = 'none';
+    }
+  });
+
+  // ========== SIDEBAR FUNCTIONS ==========
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebarOverlay');
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('show');
+  }
+
+  function closeSidebarOnly(event) {
+    if (event) event.stopPropagation();
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('sidebarOverlay').classList.remove('show');
+  }
+
+  // ========== TAB FUNCTIONS ==========
+  function switchTab(tab) {
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+    if (tab === 'pakistani') {
+      document.querySelector('.tab-btn:first-child').classList.add('active');
+      document.getElementById('pakistani').classList.add('active');
+    } else {
+      document.querySelector('.tab-btn:last-child').classList.add('active');
+      document.getElementById('international').classList.add('active');
+    }
+  }
+
+  function loadCategoryData() {}
+
+  function searchError(type) {
+    const brandSelect = type === 'pakistani' ? 'pakistaniBrand' : 'internationalBrand';
+    const codeInput = type === 'pakistani' ? 'pakistaniCode' : 'internationalCode';
+    const applianceSelect = document.getElementById('applianceSelect');
+    const brand = document.getElementById(brandSelect)?.value;
+    const code = document.getElementById(codeInput)?.value;
+    const appliance = applianceSelect?.value;
+
+    if (!brand) { showNotification('Please select a brand'); return; }
+    if (!code)  { showNotification('Please enter an error code'); return; }
+
+    showNotification(`Searching for ${code} in ${appliance}...`);
+    simulateSearchResult(appliance, brand, code);
+  }
+
+  function simulateSearchResult(appliance, brand, code) {
+    const resultArea = document.getElementById('resultArea');
+    const errorData = {
+      ac: {
+        e1: {
+          title: 'Room Temperature Sensor Error',
+          issue: 'The room temperature sensor has failed or is providing incorrect readings.',
+          solution: 'Check sensor connections, measure resistance, replace if faulty.',
+          causes: ['Sensor failure', 'Loose connection', 'Damaged wiring', 'PCB issue'],
+          steps: [
+            'Turn off power to the AC unit',
+            'Locate the room temperature sensor',
+            'Check for visible damage or loose connections',
+            'Measure sensor resistance with multimeter',
+            'Replace sensor if readings are outside normal range',
+            'Reset the unit and test'
+          ]
+        },
+        e5: {
+          title: 'Communication Error Between Indoor and Outdoor Units',
+          issue: 'The indoor and outdoor units are not communicating properly.',
+          solution: 'Check wiring connections between units, verify proper voltage.',
+          causes: ['Loose wiring', 'Damaged communication cable', 'PCB failure', 'Power supply issues'],
+          steps: [
+            'Check all wiring connections between indoor and outdoor units',
+            'Inspect cables for damage or corrosion',
+            'Verify proper voltage at connection points',
+            'Reset both units by turning off power for 5 minutes',
+            'If problem persists, PCB may need replacement'
+          ]
+        }
+      },
+      washing_machine: {
+        ue: {
+          title: 'Unbalanced Load Error',
+          issue: 'The washing machine detects an unbalanced load during the spin cycle.',
+          solution: 'Redistribute clothes evenly, reduce load size, ensure machine is level.',
+          causes: ['Unevenly distributed clothes', 'Overloading', 'Machine not level', 'Shock absorbers worn'],
+          steps: [
+            'Open the door and redistribute clothes evenly',
+            'Remove some items if the load is too heavy',
+            'Check if machine is level (adjust feet if needed)',
+            'Ensure machine is on solid, level floor',
+            'Restart the spin cycle'
+          ]
+        }
+      }
+    };
+
+    const applianceData = errorData[appliance] || errorData.ac;
+    const errorInfo = applianceData[code.toLowerCase()] || {
+      title: `${code} Error Code`,
+      issue: `Error code ${code} indicates a specific problem with your ${appliance.replace('_', ' ')}.`,
+      solution: 'Please consult your appliance manual or contact a certified technician.',
+      causes: ['Sensor malfunction', 'Electrical issue', 'Component failure', 'System error'],
+      steps: [
+        'Turn off the appliance and unplug it',
+        'Wait 5 minutes and restart',
+        'Check for visible damage or loose connections',
+        'Consult professional technician if error persists'
+      ]
+    };
+
+    resultArea.innerHTML = `
+      <div class="result-card">
+        <div class="result-header">
+          <div class="brand-icon">${brand.charAt(0).toUpperCase()}</div>
+          <div>
+            <h2 class="result-title">${brand.replace('_', ' ').toUpperCase()} - ${appliance.replace('_', ' ')}</h2>
+            <span class="error-code">Error Code: ${code.toUpperCase()}</span>
+          </div>
+        </div>
+        <div class="info-item issue">
+          <div class="info-icon issue"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="info-content">
+            <h3>Error Description</h3>
+            <p><strong>${errorInfo.title}</strong></p>
+          </div>
+        </div>
+        <h3 style="color: var(--accent-gold); margin: 20px 0 10px 0;">Possible Causes:</h3>
+        <ul style="color: var(--text-gray); padding-left: 20px; margin-bottom: 20px;">
+          ${errorInfo.causes.map(cause => `<li>${cause}</li>`).join('')}
+        </ul>
+        <h3 style="color: var(--accent-gold); margin: 20px 0 10px 0;">Step-by-Step Troubleshooting:</h3>
+        <ol style="color: var(--text-gray); padding-left: 20px; margin-bottom: 20px;">
+          ${errorInfo.steps.map(step => `<li>${step}</li>`).join('')}
+        </ol>
+        <div class="safety-instructions">
+          <h4><i class="fas fa-shield-alt"></i> Safety Instructions</h4>
+          <ul>
+            <li>Always disconnect power before attempting any repairs</li>
+            <li>Use insulated tools when working with electrical components</li>
+            <li>If unsure, consult a certified technician</li>
+          </ul>
+        </div>
+      </div>
+    `;
+
+    document.getElementById('currentPage').innerHTML = `${brand} ${code} Error`;
+  }
+
+  function quickSearch(appliance, brand, code) {
+    document.getElementById('applianceSelect').value = appliance;
+    document.getElementById('pakistaniCode').value = code;
+    simulateSearchResult(appliance, brand, code);
+  }
+
+  function adjustForKeyboard() {
+    document.body.classList.add('keyboard-active');
+  }
+
+  // ========== MODAL FUNCTIONS ==========
+  function closeAllModals() {
+    document.querySelectorAll('.modal-overlay.show').forEach(modal => modal.classList.remove('show'));
+  }
+
+  window.addEventListener('popstate', closeAllModals);
+
+  function openModal(id) {
+    closeAllModals();
+    document.getElementById(id).classList.add('show');
+    if (document.getElementById('sidebar').classList.contains('open')) toggleSidebar();
+    history.pushState({ modal: id }, '');
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('show');
+    history.back();
+  }
+
+  function openAboutModal()      { openModal('aboutModal'); }
+  function closeAboutModal()     { closeModal('aboutModal'); }
+  function openTermsModal()      { openModal('termsModal'); }
+  function closeTermsModal()     { closeModal('termsModal'); }
+  function openPrivacyModal()    { openModal('privacyModal'); }
+  function closePrivacyModal()   { closeModal('privacyModal'); }
+  function openDisclaimerModal() { openModal('disclaimerModal'); }
+  function closeDisclaimerModal(){ closeModal('disclaimerModal'); }
+  function openContactModal()    { openModal('contactModal'); }
+  function closeContactModal()   { closeModal('contactModal'); }
+  function openSupportModal()    { openModal('supportModal'); }
+  function closeSupportModal()   { closeModal('supportModal'); }
+  function openSuggestionModal() { openModal('suggestionModal'); }
+  function closeSuggestionModal(){ closeModal('suggestionModal'); }
+
+  function handleHeaderAuthClick() { openModal('userModal'); }
+  function closeUserModal()        { closeModal('userModal'); }
+
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === this) { this.classList.remove('show'); history.back(); }
+    });
+  });
+
+  // ========== OTHER FUNCTIONS ==========
+  function clearSearchHistory() { showNotification('Search history cleared'); toggleSidebar(); }
+
+  function handleGoogleLogin() { showNotification('Google Login clicked'); }
+
+  function handleLogout() { showNotification('Logged out successfully'); closeUserModal(); }
+
+  function submitSuggestion() {
+    const name = document.getElementById('suggestionName')?.value;
+    if (!name) { showNotification('Please enter your name'); return; }
+    showNotification('Suggestion submitted successfully');
+    closeSuggestionModal();
+  }
+
+  function goBackFromLogin() {
+    document.getElementById('loginScreen').style.display = 'none';
+    document.getElementById('appContainer').classList.add('active');
+  }
+
+  function showHome() {
+    document.getElementById('currentPage').innerHTML = 'Error Code Search';
+    document.getElementById('resultArea').innerHTML = `
+      <div class="initial-state">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <h2>Ready to Help</h2>
+        <p>Select a brand and enter an error code to get instant professional diagnosis</p>
+      </div>
+    `;
+    document.querySelector('.search-card').style.display = 'block';
+    document.querySelector('.articles-section').style.display = 'block';
+  }
+
+  function filterByCategory(category) {
+    const select = document.getElementById('applianceSelect');
+    if (select) {
+      select.value = category;
+      showNotification(`Showing ${category.replace('_', ' ')} error codes`);
+    }
+  }
+
+  function showNotification(message) {
+    const notification = document.getElementById('notification');
+    notification.textContent = message;
+    notification.classList.add('show');
+    setTimeout(() => notification.classList.remove('show'), 3000);
+  }
+
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('SW registered:', reg.scope))
+        .catch(err => console.log('SW failed:', err));
+    });
+  }
+</script>
+
+<script src="rukhsar.js"></script>
+<script src="common-time.js"></script>
+</body>
+</html>
+
