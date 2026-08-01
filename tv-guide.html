@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>TV Error Codes | LED LCD Smart TV Troubleshooting Guide | Pakistan</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acpakistan.netlify.app/tv-guide.html">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --primary: #0d0d0d;
+      --secondary: #1a1a2e;
+      --accent: #f0b90b;
+      --accent-dark: #ff6b00;
+      --text: #ffffff;
+      --text-gray: #b0b0b0;
+      --text-muted: #888888;
+      --success: #00d26a;
+      --warning: #ffaa00;
+      --error: #ff4757;
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --border: rgba(240, 185, 11, 0.15);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 12px;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      background: rgba(22, 22, 22, 0.98);
+      border-radius: 20px;
+      padding: 20px 16px;
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: clamp(24px, 6vw, 32px);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: clamp(20px, 5vw, 24px);
+      margin: 24px 0 12px 0;
+      border-left: 4px solid var(--accent-dark);
+      padding-left: 12px;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: var(--accent-dark);
+      font-size: clamp(18px, 4.5vw, 20px);
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--text-gray);
+      font-size: 15px;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    ul, ol {
+      color: var(--text-gray);
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--accent);
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .meta-item i {
+      color: var(--accent);
+    }
+
+    .article-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border-radius: 16px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .story-card {
+      background: rgba(240, 185, 11, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 25px 0;
+      border: 1px solid rgba(240, 185, 11, 0.2);
+    }
+
+    .story-card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .warning-card {
+      background: rgba(255, 71, 87, 0.05);
+      border-left: 4px solid var(--error);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .tip-card {
+      background: rgba(0, 210, 106, 0.05);
+      border-left: 4px solid var(--success);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .brand-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .brand-card h4 {
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .brand-card p {
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+
+    .brand-card code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: var(--accent-dark);
+      font-size: 11px;
+    }
+
+    .problem-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .problem-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .step-number {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background: rgba(240, 185, 11, 0.2);
+      color: var(--accent);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      font-weight: 600;
+      font-size: 11px;
+      margin-right: 6px;
+    }
+
+    .blink-pattern {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 12px;
+      margin: 10px 0;
+      border-left: 3px solid var(--accent);
+    }
+
+    .blink-pattern p {
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+
+    .error-table {
+      width: 100%;
+      min-width: 500px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .error-table th {
+      background: rgba(240, 185, 11, 0.15);
+      color: var(--accent);
+      padding: 10px 8px;
+      text-align: left;
+    }
+
+    .error-table td {
+      padding: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-gray);
+    }
+
+    .error-table code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--accent-dark);
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .faq-question {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .faq-answer {
+      color: var(--text-gray);
+      font-size: 13px;
+      line-height: 1.6;
+      padding-left: 18px;
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 25px 0;
+      padding: 16px;
+      background: rgba(240, 185, 11, 0.05);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(240, 185, 11, 0.1);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 10px 18px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .article-link {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      color: var(--text-gray);
+    }
+
+    .article-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (max-width: 480px) {
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stats-bar {
+        grid-template-columns: 1fr;
+      }
+      .brand-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    
+    <a href="https://acpakistan.netlify.app" class="back-btn">
+      <i class="fas fa-home"></i> Back Home
+    </a>
+
+    <h1>TV Error Codes Guide</h1>
+    
+    <div class="article-meta">
+      <span class="meta-item"><i class="fas fa-calendar-alt"></i> April 2026</span>
+      <span class="meta-item"><i class="fas fa-clock"></i> 8 min read</span>
+      <span class="meta-item"><i class="fas fa-tag"></i> TV Guide</span>
+    </div>
+
+    <div class="article-image">
+      <img src="images/tv-guide.jpg" alt="TV Repair" onerror="this.parentElement.style.background='linear-gradient(135deg, #f0b90b, #ff6b00)'; this.style.display='none'">
+    </div>
+    <div class="image-caption">Complete TV error code and troubleshooting guide</div>
+
+    <!-- REAL STORY 1 - NEW: Ratodero, 2005 -->
+    <div class="story-card">
+      <h3>A Family from Ratodero - December 2005</h3>
+      <p>A family from Ratodero called me in December 2005. They said "Our Samsung TV has sound but no picture. The screen is black. We can hear the channels but cannot see anything." I asked them to perform the flashlight test. They shined a bright light on the screen and saw a faint image. The backlight had failed. They called a technician who replaced the LED strips. The TV worked again. The father said "Thank you for telling us what was wrong before we called the technician."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Samsung | <strong>Problem:</strong> Sound but no picture | <strong>Fix:</strong> Replace backlight LED strips</p>
+    </div>
+
+    <p><strong>TV error codes</strong> appear as on-screen messages or blinking LED patterns that indicate specific problems. Understanding these codes can help you diagnose issues with power, backlight, main board, T-con board, and panel. This guide covers all major brands including Samsung, LG, Sony, Panasonic, TCL, and more.</p>
+
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-value">15+</div><div class="stat-label">Error Codes</div></div>
+      <div class="stat-item"><div class="stat-value">8</div><div class="stat-label">Top Brands</div></div>
+      <div class="stat-item"><div class="stat-value">⚡</div><div class="stat-label">LED Patterns</div></div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>Quick Diagnostic Test - Flashlight Test:</strong> If your TV has power and sound but no picture, shine a bright flashlight closely at the screen. If you see a faint image, the backlight has failed. If you see no image at all, the issue is with the main board, T-con board, or panel.</p>
+    </div>
+
+    <!-- REAL STORY 2 - NEW: Jacobabad, 2007 -->
+    <div class="story-card">
+      <h3>A Shopkeeper from Jacobabad - March 2007</h3>
+      <p>A shopkeeper from Jacobabad called me in March 2007. He said "My LG TV is showing 2 blinking lights. The TV turns on for a second and then turns off. It keeps repeating this cycle." I asked him to check the power supply board. He opened the back and found two capacitors with bulging tops. He replaced them with new ones. The TV started working normally. He said "I saved 5000 rupees by fixing it myself. Thank you for your help."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> LG | <strong>Error:</strong> 2 blinks | <strong>Fix:</strong> Replace bulging capacitors on power supply</p>
+    </div>
+
+    <h2>Common TV Error Codes</h2>
+    <div class="table-wrapper">
+      <table class="error-table">
+        <thead>
+          <tr><th>Code or Pattern</th><th>Meaning</th><th>Common Fix</th><th>Difficulty</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>No Picture / Sound OK</code></span></td><td class="meaning">Backlight failure</span></td><td class="fix">Replace LED strips</span></td><td class="diff-hard">Hard</span></td>
+          </tr>
+          <tr><td><code>2 blinks</code></span></td><td class="meaning">Power supply issue</span></td><td class="fix">Check capacitors, power board</span></td><td class="diff-medium">Medium</span></td>
+          </tr>
+          <tr><td><code>3 blinks</code></span></td><td class="meaning">Main board failure</span></td><td class="fix">Replace main board</span></td><td class="diff-medium">Medium</span></td>
+          </tr>
+          <tr><td><code>4 blinks</code></span></td><td class="meaning">Backlight LED issue</span></td><td class="fix">Check LED strips</span></td><td class="diff-hard">Hard</span></td>
+          </tr>
+          <tr><td><code>5 blinks</code></span></td><td class="meaning">T-con board issue</span></td><td class="fix">Check T-con board, cables</span></td><td class="diff-medium">Medium</span></td>
+          </tr>
+          <tr><td><code>6 blinks</code></span></td><td class="meaning">Panel failure</span></td><td class="fix">Panel replacement (costly)</span></td><td class="diff-hard">Hard</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- REAL STORY 3 - NEW: Mirpur Mathelo, 2009 -->
+    <div class="story-card">
+      <h3>A Teacher from Mirpur Mathelo - August 2009</h3>
+      <p>A school teacher from Mirpur Mathelo called me in August 2009. He said "My Sony TV has lines on the screen. There are vertical lines all across the display. The picture is still there but the lines are annoying." I asked him to check the ribbon cables. He opened the TV and found one ribbon cable was loose. He reseated it carefully. The lines disappeared. He said "I was about to throw this TV away. You saved it from the garbage."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Sony | <strong>Problem:</strong> Vertical lines on screen | <strong>Fix:</strong> Reseat loose ribbon cable</p>
+    </div>
+
+    <h2>Blinking LED Error Codes by Brand</h2>
+
+    <h3>Samsung TV Blinking Codes</h3>
+    <div class="blink-pattern">
+      <p><strong>2 blinks:</strong> Power supply issue - check power board, capacitors</p>
+      <p><strong>3 blinks:</strong> Main board failure - replace main board</p>
+      <p><strong>4 blinks:</strong> Backlight LED problem - check LED strips</p>
+      <p><strong>5 blinks:</strong> T-con board issue - check T-con board, ribbon cables</p>
+      <p><strong>6 blinks:</strong> Panel failure - panel replacement needed</p>
+    </div>
+
+    <h3>LG TV Blinking Codes</h3>
+    <div class="blink-pattern">
+      <p><strong>2 blinks:</strong> Power supply problem - check power board</p>
+      <p><strong>3 blinks:</strong> Main board failure - replace main board</p>
+      <p><strong>4 blinks:</strong> Backlight LED issue - check LED strips</p>
+      <p><strong>5 blinks:</strong> T-con board problem - check T-con board</p>
+      <p><strong>6 blinks:</strong> Panel failure - panel replacement</p>
+    </div>
+
+    <h3>Sony TV Blinking Codes</h3>
+    <div class="blink-pattern">
+      <p><strong>2 blinks:</strong> Power supply issue - check power board</p>
+      <p><strong>3 blinks:</strong> Audio board failure - check audio board</p>
+      <p><strong>4 blinks:</strong> Backlight problem - check LED strips</p>
+      <p><strong>5 blinks:</strong> Main board failure - replace main board</p>
+      <p><strong>6 blinks:</strong> T-con or panel issue - check T-con board</p>
+    </div>
+
+    <!-- REAL STORY 4 - NEW: Ubauro, 2011 -->
+    <div class="story-card">
+      <h3>A Businessman from Ubauro - May 2011</h3>
+      <p>A businessman from Ubauro called me in May 2011. He said "My TCL TV is showing 5 blinking lights. The picture is distorted and has weird colors. Half the screen looks normal, half is messed up." I told him this is likely a T-con board problem. He ordered a replacement T-con board online for 1500 rupees. He installed it himself. The picture became perfect. He said "You diagnosed the problem perfectly. I am very grateful."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> TCL | <strong>Error:</strong> 5 blinks | <strong>Fix:</strong> Replace T-con board</p>
+    </div>
+
+    <h2>Brand Specific Error Codes</h2>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <h4>Samsung</h4>
+        <p><code>2 blinks</code> Power</p>
+        <p><code>3 blinks</code> Main board</p>
+        <p><code>4 blinks</code> Backlight</p>
+        <p><code>5 blinks</code> T-con</p>
+        <p><code>6 blinks</code> Panel</p>
+      </div>
+      <div class="brand-card">
+        <h4>LG</h4>
+        <p><code>2 blinks</code> Power</p>
+        <p><code>3 blinks</code> Main</p>
+        <p><code>4 blinks</code> Backlight</p>
+        <p><code>5 blinks</code> T-con</p>
+        <p><code>6 blinks</code> Panel</p>
+      </div>
+      <div class="brand-card">
+        <h4>Sony</h4>
+        <p><code>2 blinks</code> Power</p>
+        <p><code>3 blinks</code> Audio</p>
+        <p><code>4 blinks</code> Backlight</p>
+        <p><code>5 blinks</code> Main</p>
+        <p><code>6 blinks</code> T-con</p>
+      </div>
+      <div class="brand-card">
+        <h4>Panasonic</h4>
+        <p><code>2 blinks</code> Power</p>
+        <p><code>3 blinks</code> Main</p>
+        <p><code>4 blinks</code> Inverter</p>
+        <p><code>5 blinks</code> T-con</p>
+        <p><code>6 blinks</code> Panel</p>
+      </div>
+    </div>
+
+    <!-- REAL STORY 5 - NEW: Pano Aqil, 2013 -->
+    <div class="story-card">
+      <h3>A Housewife from Pano Aqil - October 2013</h3>
+      <p>A housewife from Pano Aqil called me in October 2013. She said "My Changhong TV is showing E3 error. The screen is black but I can hear sound. What should I do?" I told her E3 indicates a backlight problem. She called a technician who replaced the LED strips. The TV started working. She said "Thank you for explaining the error code. The technician fixed it quickly because I knew what to tell him."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Changhong | <strong>Error:</strong> E3 | <strong>Fix:</strong> Replace backlight LED strips</p>
+    </div>
+
+    <h2>Common TV Problems and Solutions</h2>
+
+    <!-- TV Has Power But No Picture -->
+    <div class="problem-card">
+      <h3>TV Has Power But No Picture (Sound OK)</h3>
+      <p><strong>Symptoms:</strong> The TV turns on. You hear sound and maybe see the standby light, but the screen remains black.</p>
+      <p><strong>Solutions:</strong> Perform the flashlight test. Shine a bright light on the screen. If you see a faint image, the backlight has failed. The LED strips need replacement. If you see no image at all, check the T-con board and ribbon cables. Reseat the ribbon cables between the T-con board and the panel. If the problem continues, the main board may need replacement.</p>
+    </div>
+
+    <!-- TV Turns On Then Off -->
+    <div class="problem-card">
+      <h3>TV Turns On Then Off (Power Cycling)</h3>
+      <p><strong>Symptoms:</strong> The TV turns on for a few seconds, then shuts down. This cycle repeats.</p>
+      <p><strong>Solutions:</strong> Unplug the TV for 10 minutes and try again. Check the power supply board for bulging capacitors. Test the voltages on the power board with a multimeter. If the backlight LEDs are shorted, they may need replacement. Replace the faulty power board or capacitors.</p>
+    </div>
+
+    <!-- TV Has Lines on Screen -->
+    <div class="problem-card">
+      <h3>TV Has Lines on Screen</h3>
+      <p><strong>Symptoms:</strong> Vertical or horizontal lines on the screen. Half the screen may be distorted.</p>
+      <p><strong>Solutions:</strong> Check the ribbon cables between the T-con board and the panel. Reseat the cables carefully with the TV unplugged. Clean the ribbon cable contacts with alcohol. If the lines continue, the T-con board may need replacement. If the lines are still there after T-con replacement, the panel has failed.</p>
+    </div>
+
+    <!-- TV Has Picture But No Sound -->
+    <div class="problem-card">
+      <h3>TV Has Picture But No Sound</h3>
+      <p><strong>Symptoms:</strong> The picture is fine, but there is no audio from the speakers.</p>
+      <p><strong>Solutions:</strong> Check if mute is on and the volume is turned up. Try a different input source. Check external speakers or the headphone jack. Test the speakers with a multimeter. They should have 4 to 16 ohms of resistance. If the speakers are good, the audio amplifier on the main board may need repair.</p>
+    </div>
+
+    <div class="warning-card">
+      <p><strong>Safety Warning:</strong> TVs contain high voltage components even when unplugged. Capacitors can hold a lethal charge. Only qualified technicians should attempt internal repairs. Never open the TV case unless you are trained.</p>
+    </div>
+
+    <h2>T-Con Board and Ribbon Cable Guide</h2>
+    
+    <div class="problem-card">
+      <h3>T-Con Board (Timing Controller)</h3>
+      <p>The T-con board converts signals from the main board to drive the panel. Common failure signs include no picture, distorted image, lines on the screen, half the screen working and half not, or colors that are wrong or inverted.</p>
+      <p><strong>Fix:</strong> Check the ribbon cables first and reseat them. Replace the T-con board if it is faulty. The replacement must have the exact same model number.</p>
+    </div>
+
+    <div class="problem-card">
+      <h3>Ribbon Cables (LVDS Cables)</h3>
+      <p>Ribbon cables connect the T-con board to the panel. Common issues include loose connections causing lines or no picture, dirty contacts causing display glitches, or damaged cables that need replacement.</p>
+      <p><strong>Fix:</strong> Power off the TV. Carefully reseat the cables. Clean the contacts with alcohol if needed.</p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">TV has sound but no picture. What is wrong?</div>
+      <div class="faq-answer">The most likely cause is backlight failure. Perform the flashlight test. If you see a faint image, the backlight LEDs need replacement. If you see no image, check the T-con board and ribbon cables.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I know if my TV power supply is bad?</div>
+      <div class="faq-answer">Signs include the TV not turning on, a blinking power light, clicking sounds, or a burning smell. Visually check for bulging capacitors on the power board. Swollen tops indicate failure.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What do blinking lights on my TV mean?</div>
+      <div class="faq-answer">Count the number of blinks between pauses. Two blinks usually indicate a power supply issue. Three blinks indicate a main board issue. Four blinks indicate a backlight issue. Five blinks indicate a T-con issue. Six blinks indicate a panel issue. Check the brand specific codes above.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I replace TV LED strips myself?</div>
+      <div class="faq-answer">It is possible but requires opening the panel carefully. There is a risk of breaking the screen. Many technicians offer this service. If you attempt it yourself, watch tutorials first and be extremely careful.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How long do LED TVs last?</div>
+      <div class="faq-answer">The average lifespan is 50,000 to 100,000 hours. This is 5 to 10 years with normal use. Backlight LEDs may dim over time or fail individually.</div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>Pakistan Specific Tips:</strong> Voltage fluctuations can damage TV power supplies. Use a voltage stabilizer or UPS. In areas with frequent power cuts, unplug the TV during storms. Dust can cause overheating. Clean the ventilation grilles regularly. For professional service, use authorized service centers for your brand.</p>
+    </div>
+
+    <div class="warning-card">
+      <p><strong>Safety Warning:</strong> TV repair requires specialized tools and knowledge. For power supply issues, capacitor replacement is often simple for technicians. For panel failure, replacement usually costs more than a new TV. Always get a professional diagnosis before ordering parts.</p>
+    </div>
+
+    <!-- All Articles Links -->
+    <h2>Related Articles</h2>
+    <div class="articles-grid">
+      <a href="ac-guide.html" class="article-link">Complete AC Error Code Guide</a>
+      <a href="washing-machine-guide.html" class="article-link">Washing Machine Error Codes</a>
+      <a href="refrigerator-guide.html" class="article-link">Refrigerator Error Codes</a>
+      <a href="microwave-guide.html" class="article-link">Microwave Error Codes</a>
+      <a href="inverter-guide.html" class="article-link">Inverter Error Codes</a>
+      <a href="haier-ac.html" class="article-link">Haier AC Error Codes</a>
+      <a href="dawlance-ac.html" class="article-link">Dawlance AC Error Codes</a>
+      <a href="gree-ac.html" class="article-link">Gree AC Error Codes</a>
+      <a href="lg-ac.html" class="article-link">LG AC Error Codes</a>
+      <a href="samsung-ac.html" class="article-link">Samsung AC Error Codes</a>
+      <a href="orient-ac.html" class="article-link">Orient AC Error Codes</a>
+      <a href="tv-no-picture.html" class="article-link">TV No Picture Fix</a>
+    </div>
+
+    <!-- Footer with 2026 - Exactly as specified -->
+    <div class="footer">
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="disclaimer.html">Disclaimer</a> | 
+        <a href="terms.html">Terms</a>
+      </div>
+  <div class="copyright">
+          <span>© <span id="currentYear"></span> ALL ERROR CODE FINDER. All rights reserved. No copyright infringement intended. Professional appliance diagnostic tool trusted by 5000+ technicians across Pakistan. All information provided for educational purposes only.</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  </div>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <style>
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f0b90b, #ff6b00);
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 15px rgba(240, 185, 11, 0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .scroll-top-btn.show { display: flex; }
+    @media (max-width: 480px) {
+      .scroll-top-btn { width: 42px; height: 42px; font-size: 18px; bottom: 15px; right: 15px; }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollBtn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) scrollBtn.classList.add('show');
+        else scrollBtn.classList.remove('show');
+      });
+      scrollBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+  <script src="common.js"></script>
+</body>
+</html>

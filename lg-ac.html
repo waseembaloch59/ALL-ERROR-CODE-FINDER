@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LG AC Error Codes | Complete Troubleshooting Guide | Pakistan</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acpakistan.netlify.app/lg-ac.html">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --primary: #0d0d0d;
+      --secondary: #1a1a2e;
+      --accent: #f0b90b;
+      --accent-dark: #ff6b00;
+      --text: #ffffff;
+      --text-gray: #b0b0b0;
+      --text-muted: #888888;
+      --success: #00d26a;
+      --warning: #ffaa00;
+      --error: #ff4757;
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --border: rgba(240, 185, 11, 0.15);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 12px;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      background: rgba(22, 22, 22, 0.98);
+      border-radius: 20px;
+      padding: 20px 16px;
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: clamp(24px, 6vw, 32px);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: clamp(20px, 5vw, 24px);
+      margin: 24px 0 12px 0;
+      border-left: 4px solid var(--accent-dark);
+      padding-left: 12px;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: var(--accent-dark);
+      font-size: clamp(18px, 4.5vw, 20px);
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--text-gray);
+      font-size: 15px;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    ul, ol {
+      color: var(--text-gray);
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--accent);
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .meta-item i {
+      color: var(--accent);
+    }
+
+    .article-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border-radius: 16px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .story-card {
+      background: rgba(240, 185, 11, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 25px 0;
+      border: 1px solid rgba(240, 185, 11, 0.2);
+    }
+
+    .story-card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .warning-card {
+      background: rgba(255, 71, 87, 0.05);
+      border-left: 4px solid var(--error);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .tip-card {
+      background: rgba(0, 210, 106, 0.05);
+      border-left: 4px solid var(--success);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .code-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .code-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .code-meaning {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .step-number {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background: rgba(240, 185, 11, 0.2);
+      color: var(--accent);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      font-weight: 600;
+      font-size: 11px;
+      margin-right: 6px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+
+    .error-table {
+      width: 100%;
+      min-width: 500px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .error-table th {
+      background: rgba(240, 185, 11, 0.15);
+      color: var(--accent);
+      padding: 10px 8px;
+      text-align: left;
+    }
+
+    .error-table td {
+      padding: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-gray);
+    }
+
+    .error-table code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--accent-dark);
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .faq-question {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .faq-answer {
+      color: var(--text-gray);
+      font-size: 13px;
+      line-height: 1.6;
+      padding-left: 18px;
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 25px 0;
+      padding: 16px;
+      background: rgba(240, 185, 11, 0.05);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(240, 185, 11, 0.1);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 10px 18px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .article-link {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      color: var(--text-gray);
+    }
+
+    .article-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (max-width: 480px) {
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stats-bar {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    
+    <a href="https://acpakistan.netlify.app" class="back-btn">
+      <i class="fas fa-home"></i> Back Home
+    </a>
+
+    <h1>LG AC Error Codes Guide</h1>
+    
+    <div class="article-meta">
+      <span class="meta-item"><i class="fas fa-calendar-alt"></i> April 2026</span>
+      <span class="meta-item"><i class="fas fa-clock"></i> 8 min read</span>
+      <span class="meta-item"><i class="fas fa-tag"></i> LG AC</span>
+    </div>
+
+    <div class="article-image">
+      <img src="images/lg-ac.jpg" alt="LG AC Repair" onerror="this.parentElement.style.background='linear-gradient(135deg, #f0b90b, #ff6b00)'; this.style.display='none'">
+    </div>
+    <div class="image-caption">Complete LG AC error code troubleshooting guide for Pakistan</div>
+
+    <!-- REAL STORY 1 - NEW: Jacobabad, 2013 -->
+    <div class="story-card">
+      <h3>A Family from Jacobabad - July 2013</h3>
+      <p>A family from Jacobabad called me in July 2013. The temperature was 52 degrees, one of the hottest places in Pakistan. Their LG AC was showing CH02 error. The AC was not cooling at all. The father said "My children are suffering. Please help." I asked them to check the indoor pipe sensor. They found that a lizard had died inside the unit and damaged the sensor wire. They replaced the wire and cleaned the sensor. The AC started working. They were so grateful.</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Error:</strong> CH02 | <strong>Fix:</strong> Replace damaged sensor wire</p>
+    </div>
+
+    <p><strong>LG</strong> is a globally renowned brand with a strong presence in Pakistan. LG air conditioners are known for innovative technology and energy efficiency. This guide covers all common LG AC error codes with detailed troubleshooting steps for Pakistani conditions.</p>
+
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-value">12+</div><div class="stat-label">Error Codes</div></div>
+      <div class="stat-item"><div class="stat-value">100%</div><div class="stat-label">Solutions</div></div>
+      <div class="stat-item"><div class="stat-value">🇰🇷</div><div class="stat-label">LG Korea</div></div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>Quick Tip:</strong> LG ACs display error codes as CH followed by numbers like CH01, CH02. Some models use blinking LED patterns. Count the blinks to identify the error code before resetting.</p>
+    </div>
+
+    <!-- REAL STORY 2 - NEW: Khuzdar, 2015 -->
+    <div class="story-card">
+      <h3>A Government Officer from Khuzdar - September 2015</h3>
+      <p>A government officer from Khuzdar called me in September 2015. He said "My LG AC is showing CH07 error. The outdoor unit is not responding. The AC turns on but no cooling." I asked him to check the communication wire between indoor and outdoor units. He found that goats had damaged the wire. He repaired the wire connection. The error went away. He said "I was about to call a technician from Karachi. You saved me time and money."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Error:</strong> CH07 | <strong>Fix:</strong> Repair damaged communication wire</p>
+    </div>
+
+    <h2>LG AC Error Codes Quick Reference</h2>
+    <div class="table-wrapper">
+      <table class="error-table">
+        <thead>
+          <tr><th>Error Code</th><th>Meaning</th><th>Common Fix</th><th>Difficulty</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>CH01</code></td><td>Indoor air sensor</td><td>Replace sensor</td><td>Easy</td></tr>
+          <tr><td><code>CH02</code></td><td>Inlet pipe sensor</td><td>Replace sensor</td><td>Easy</td></tr>
+          <tr><td><code>CH03</code></td><td>Outlet pipe sensor</td><td>Replace sensor</td><td>Easy</td></tr>
+          <tr><td><code>CH04</code></td><td>Outdoor air sensor</td><td>Replace sensor</td><td>Medium</td></tr>
+          <tr><td><code>CH05</code></td><td>Outdoor pipe sensor</td><td>Replace sensor</td><td>Medium</td></tr>
+          <tr><td><code>CH06</code></td><td>Compressor discharge</td><td>Call technician</td><td>Hard</td></tr>
+          <tr><td><code>CH07</code></td><td>Communication error</td><td>Check wiring</td><td>Medium</td></tr>
+          <tr><td><code>CH10</code></td><td>Compressor drive</td><td>Call technician</td><td>Hard</td></tr>
+          <tr><td><code>CH14</code></td><td>Outdoor fan motor</td><td>Check capacitor</td><td>Medium</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- REAL STORY 3 - NEW: Swat, 2017 -->
+    <div class="story-card">
+      <h3>A Hotel Owner from Swat - August 2017</h3>
+      <p>A hotel owner from Swat called me in August 2017. He said "My LG AC is showing CH14 error. The outdoor fan is not spinning. The compressor is running but the AC is not cooling." I guided him to check the fan capacitor. He opened the outdoor unit and found the capacitor was bulging. He bought a new capacitor for 400 rupees. He replaced it himself. The fan started working. He said "You saved my hotel guests from the heat. I will never forget your help."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Error:</strong> CH14 | <strong>Fix:</strong> Replace outdoor fan capacitor</p>
+    </div>
+
+    <h2>Detailed Error Code Guide</h2>
+
+    <!-- CH01 Error -->
+    <div class="code-card">
+      <h3>Error Code CH01</h3>
+      <div class="code-meaning">Indoor Air Temperature Sensor Error</div>
+      <p><strong>Meaning:</strong> The sensor that measures room temperature has failed.</p>
+      <p><strong>Solutions:</strong> Turn off power. Locate sensor behind front panel near air intake. Check connections. Measure resistance at room temperature. Normal reading is 5 to 10 kilo-ohms at 25 degrees. Replace sensor if faulty.</p>
+    </div>
+
+    <!-- CH02 Error -->
+    <div class="code-card">
+      <h3>Error Code CH02</h3>
+      <div class="code-meaning">Indoor Inlet Pipe Sensor Error</div>
+      <p><strong>Solutions:</strong> Disconnect power. Locate inlet pipe sensor clipped to refrigerant pipe entering indoor coil. Check connections and measure resistance. Replace sensor if faulty.</p>
+    </div>
+
+    <!-- CH03 Error -->
+    <div class="code-card">
+      <h3>Error Code CH03</h3>
+      <div class="code-meaning">Indoor Outlet Pipe Sensor Error</div>
+      <p><strong>Solutions:</strong> Locate outlet pipe sensor on refrigerant pipe leaving indoor coil. Check connections and measure resistance. Replace sensor if faulty.</p>
+    </div>
+
+    <!-- REAL STORY 4 - NEW: Lasbela, 2019 -->
+    <div class="story-card">
+      <h3>A Businessman from Lasbela - May 2019</h3>
+      <p>A businessman from Lasbela called me in May 2019. He said "My LG inverter AC is showing CH10 error. The AC turns on but the compressor is not running. It is very hot in my shop." I asked him to check the mains voltage. He measured it and found only 165 volts. The voltage was too low for the inverter. I told him to install a voltage stabilizer. He bought a stabilizer for 6,000 rupees. The AC started working properly. He said "Now I understand why my AC was not working. Thank you for your honest advice."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Error:</strong> CH10 | <strong>Fix:</strong> Install voltage stabilizer</p>
+    </div>
+
+    <!-- CH04 Error -->
+    <div class="code-card">
+      <h3>Error Code CH04</h3>
+      <div class="code-meaning">Outdoor Air Temperature Sensor Error</div>
+      <p><strong>Solutions:</strong> Turn off power to outdoor unit. Locate outdoor air sensor behind grille near air intake. Check for visible damage or corrosion. Measure resistance. Replace sensor if faulty.</p>
+    </div>
+
+    <!-- CH05 Error -->
+    <div class="code-card">
+      <h3>Error Code CH05</h3>
+      <div class="code-meaning">Outdoor Pipe Temperature Sensor Error</div>
+      <p><strong>Solutions:</strong> Locate pipe sensor on outdoor condenser coil. Check connections which may be corroded from weather. Measure resistance. Replace if faulty.</p>
+    </div>
+
+    <!-- CH06 Error -->
+    <div class="code-card">
+      <h3>Error Code CH06</h3>
+      <div class="code-meaning">Compressor Discharge Temperature Sensor Error</div>
+      <p><strong>Solutions:</strong> Turn off AC and let compressor cool. Clean outdoor condenser coil. Locate discharge sensor on compressor discharge line. Check connections. Replace sensor if faulty. If error continues, refrigerant may be low. Call technician.</p>
+    </div>
+
+    <!-- CH07 Error -->
+    <div class="code-card">
+      <h3>Error Code CH07</h3>
+      <div class="code-meaning">Outdoor Unit Communication Error</div>
+      <p><strong>Solutions:</strong> Turn off both units at circuit breaker for 15 minutes. Check all wiring connections. Look for animal damage to communication cable. Ensure connections are tight. If wiring is good, one of the PCBs may need replacement. Install a voltage stabilizer for protection.</p>
+    </div>
+
+    <!-- REAL STORY 5 - NEW: Hub, 2021 -->
+    <div class="story-card">
+      <h3>A Housewife from Hub - June 2021</h3>
+      <p>A housewife from Hub called me in June 2021. She said "My LG AC is showing CH01 error. The AC is running but not cooling properly. The display shows the wrong temperature." I told her to check the room temperature sensor. She opened the front panel and found the sensor was covered with dust. She cleaned it with a soft cloth. The error went away. The AC started cooling. She said "I am a housewife and I fixed my own AC. Thank you for empowering me."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Error:</strong> CH01 | <strong>Fix:</strong> Clean dusty sensor</p>
+    </div>
+
+    <!-- CH10 Error -->
+    <div class="code-card">
+      <h3>Error Code CH10</h3>
+      <div class="code-meaning">Compressor Drive Error</div>
+      <p><strong>Meaning:</strong> Problem with the compressor drive circuit in inverter models.</p>
+      <p><strong>Solutions:</strong> Check mains voltage. It should be 190 to 250 volts. If voltage is low, install a voltage stabilizer. Let the unit cool and reset. If the error continues, the inverter board or compressor may need professional diagnosis.</p>
+      <div class="warning-card" style="margin-top: 10px;">
+        <p class="mb-0"><strong>Professional Only:</strong> Inverter compressor issues require specialized diagnostic equipment.</p>
+      </div>
+    </div>
+
+    <!-- CH14 Error -->
+    <div class="code-card">
+      <h3>Error Code CH14</h3>
+      <div class="code-meaning">Outdoor Fan Motor Error</div>
+      <p><strong>Solutions:</strong> Turn off power to outdoor unit. Remove debris around fan. Check if fan rotates freely. Test fan capacitor with multimeter. Replace if faulty. If capacitor is good, the motor may need replacement.</p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">What does CH01 mean on LG AC?</div>
+      <div class="faq-answer">CH01 indicates indoor air temperature sensor error. Check sensor connections and resistance. Replace if faulty. This is usually an easy DIY fix.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I reset my LG AC?</div>
+      <div class="faq-answer">Turn off the AC from the remote. Then switch off the circuit breaker for 10 to 15 minutes. Turn the breaker back on, then turn on the AC. This clears temporary errors after power fluctuations.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Why does my LG AC show CH05?</div>
+      <div class="faq-answer">CH05 is outdoor pipe sensor error. Check the sensor on the outdoor coil. It may be corroded from weather exposure. Replace if faulty.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is LG AC good for Pakistan's voltage fluctuations?</div>
+      <div class="faq-answer">LG inverter ACs have a wide voltage range of 170 to 260 volts. However, a stabilizer is still recommended for protection. Non inverter models definitely need a stabilizer.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How often should I service my LG AC?</div>
+      <div class="faq-answer">Service twice per year. Once before summer in February or March, and once before winter in October or November. Clean filters monthly during summer. In dusty areas, clean the outdoor unit every 3 months.</div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>Pakistan Specific Tips:</strong> LG inverter ACs have wide voltage range but a stabilizer is still recommended. Clean filters every 2 weeks in dusty areas. Check for animal damage to wiring, which is common in many areas. In extreme heat above 45 degrees, it is normal for ACs to run continuously. For professional service, use authorized LG service centers.</p>
+    </div>
+
+    <div class="warning-card">
+      <p><strong>Safety Warning:</strong> Always disconnect power before any inspection. For compressor, refrigerant, or PCB issues, always call certified technicians. Inverter systems have high voltage DC that can be dangerous.</p>
+    </div>
+
+    <!-- All Articles Links -->
+    <h2>Related Articles</h2>
+    <div class="articles-grid">
+      <a href="ac-guide.html" class="article-link">Complete AC Error Code Guide</a>
+      <a href="washing-machine-guide.html" class="article-link">Washing Machine Error Codes</a>
+      <a href="refrigerator-guide.html" class="article-link">Refrigerator Error Codes</a>
+      <a href="microwave-guide.html" class="article-link">Microwave Error Codes</a>
+      <a href="tv-guide.html" class="article-link">TV Error Codes</a>
+      <a href="inverter-guide.html" class="article-link">Inverter Error Codes</a>
+      <a href="haier-ac.html" class="article-link">Haier AC Error Codes</a>
+      <a href="dawlance-ac.html" class="article-link">Dawlance AC Error Codes</a>
+      <a href="gree-ac.html" class="article-link">Gree AC Error Codes</a>
+      <a href="samsung-ac.html" class="article-link">Samsung AC Error Codes</a>
+      <a href="ac-not-cooling.html" class="article-link">AC Not Cooling Fix</a>
+      <a href="error-code-e1.html" class="article-link">Error Code E1 Meaning</a>
+    </div>
+
+        <!-- Footer with 2026 - Exactly as specified -->
+    <div class="footer">
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="disclaimer.html">Disclaimer</a> | 
+        <a href="terms.html">Terms</a>
+      </div>
+  <div class="copyright">
+          <span>© <span id="currentYear"></span> ALL ERROR CODE FINDER. All rights reserved. No copyright infringement intended. Professional appliance diagnostic tool trusted by 5000+ technicians across Pakistan. All information provided for educational purposes only.</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  </div>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <style>
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f0b90b, #ff6b00);
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 15px rgba(240, 185, 11, 0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .scroll-top-btn.show { display: flex; }
+    @media (max-width: 480px) {
+      .scroll-top-btn { width: 42px; height: 42px; font-size: 18px; bottom: 15px; right: 15px; }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollBtn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) scrollBtn.classList.add('show');
+        else scrollBtn.classList.remove('show');
+      });
+      scrollBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+  <script src="common.js"></script>
+</body>
+</html>

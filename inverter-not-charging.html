@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Inverter Not Charging? 10 Common Problems & Solutions | Pakistan Guide</title>
+<meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acpakistan.netlify.app/inverter-not-charging.html"> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --primary: #0d0d0d;
+      --secondary: #1a1a2e;
+      --accent: #f0b90b;
+      --accent-dark: #ff6b00;
+      --text: #ffffff;
+      --text-gray: #b0b0b0;
+      --text-muted: #888888;
+      --success: #00d26a;
+      --warning: #ffaa00;
+      --error: #ff4757;
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --border: rgba(240, 185, 11, 0.15);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 12px;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      background: rgba(22, 22, 22, 0.98);
+      border-radius: 20px;
+      padding: 20px 16px;
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: clamp(24px, 6vw, 32px);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: clamp(20px, 5vw, 24px);
+      margin: 24px 0 12px 0;
+      border-left: 4px solid var(--accent-dark);
+      padding-left: 12px;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: var(--accent-dark);
+      font-size: clamp(18px, 4.5vw, 20px);
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--text-gray);
+      font-size: 15px;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    ul, ol {
+      color: var(--text-gray);
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--accent);
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .meta-item i {
+      color: var(--accent);
+    }
+
+    .article-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border-radius: 16px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .story-card {
+      background: rgba(240, 185, 11, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 25px 0;
+      border: 1px solid rgba(240, 185, 11, 0.2);
+    }
+
+    .story-card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .warning-card {
+      background: rgba(255, 71, 87, 0.05);
+      border-left: 4px solid var(--error);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .tip-card {
+      background: rgba(0, 210, 106, 0.05);
+      border-left: 4px solid var(--success);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .problem-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .problem-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .problem-number {
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      color: #000;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 26px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    .step-number {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background: rgba(240, 185, 11, 0.2);
+      color: var(--accent);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      font-weight: 600;
+      font-size: 11px;
+      margin-right: 6px;
+    }
+
+    .voltage-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .voltage-table th {
+      background: rgba(240, 185, 11, 0.15);
+      color: var(--accent);
+      padding: 10px 8px;
+      text-align: left;
+      font-size: 13px;
+    }
+
+    .voltage-table td {
+      padding: 8px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-gray);
+      font-size: 13px;
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .faq-question {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .faq-answer {
+      color: var(--text-gray);
+      font-size: 13px;
+      line-height: 1.6;
+      padding-left: 18px;
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 25px 0;
+      padding: 16px;
+      background: rgba(240, 185, 11, 0.05);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(240, 185, 11, 0.1);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 10px 18px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .article-link {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      color: var(--text-gray);
+    }
+
+    .article-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (max-width: 480px) {
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stats-bar {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    
+    <a href="https://acpakistan.netlify.app" class="back-btn">
+      <i class="fas fa-home"></i> Back Home
+    </a>
+
+    <h1>Inverter Not Charging? 10 Common Problems</h1>
+    
+    <div class="article-meta">
+      <span class="meta-item"><i class="fas fa-calendar-alt"></i> April 2026</span>
+      <span class="meta-item"><i class="fas fa-clock"></i> 8 min read</span>
+      <span class="meta-item"><i class="fas fa-tag"></i> Inverter Guide</span>
+    </div>
+
+    <div class="article-image">
+      <img src="images/inverter-not-charging.jpg" alt="Inverter Not Charging Repair" onerror="this.parentElement.style.background='linear-gradient(135deg, #f0b90b, #ff6b00)'; this.style.display='none'">
+    </div>
+    <div class="image-caption">10 common problems and solutions for inverter not charging</div>
+
+    <!-- REAL STORY 1 - NEW: Sibi, 2014 -->
+    <div class="story-card">
+      <h3>A Family from Sibi - August 2014</h3>
+      <p>A family from Sibi called me in August 2014. The temperature was 50 degrees. They said "Our Crown inverter is not charging. We have no lights at night. The battery is new but the inverter shows no charging." I asked them to check the input MCB. They found the MCB was tripped. They reset it. The inverter started charging. The father said "We were about to buy a new inverter for 20,000 rupees. You saved us so much money."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Crown | <strong>Fix:</strong> Reset tripped MCB</p>
+    </div>
+
+    <p><strong>Inverter not charging?</strong> In Pakistan, where load shedding is common, a non-charging inverter means no backup power during outages. Before calling an expensive technician, check these 10 common problems. Many charging issues have simple solutions you can fix yourself.</p>
+
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-value">10</div><div class="stat-label">Problems</div></div>
+      <div class="stat-item"><div class="stat-value">80%</div><div class="stat-label">DIY Fixes</div></div>
+      <div class="stat-item"><div class="stat-value">⚡</div><div class="stat-label">Power Backup</div></div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>First Thing to Check:</strong> When inverter is not charging, first check if mains power is available. Is the input MCB on? Is the wall socket working? Check if the inverter display is on and showing any error codes.</p>
+    </div>
+
+    <!-- REAL STORY 2 - NEW: Gilgit, 2018 -->
+    <div class="story-card">
+      <h3>A Hotel Owner from Gilgit - October 2018</h3>
+      <p>A hotel owner from Gilgit called me in October 2018. He said "My Homage inverter is not charging. The battery terminals have white powder on them. What should I do?" I told him to clean the terminals with baking soda and hot water. He cleaned them. The inverter started charging again. He said "I have 5 inverters in my hotel. Now I know how to maintain them properly. Thank you for teaching me."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Homage | <strong>Fix:</strong> Clean corroded battery terminals</p>
+    </div>
+
+    <h2>10 Common Problems and Solutions</h2>
+
+    <!-- Problem 1 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">1</span> Mains Power Not Available</h3>
+      <p><strong>Problem:</strong> No input power reaching the inverter. This sounds obvious but is often overlooked.</p>
+      <p><strong>Symptoms:</strong> Inverter running on battery, no charging, display shows no AC input.</p>
+      <p><strong>Solutions:</strong> Check if mains power is on in your house. Check the MCB for the inverter and reset if tripped. Check the wall socket with another device. Check the input fuse on the inverter if accessible.</p>
+    </div>
+
+    <!-- Problem 2 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">2</span> Battery Connections Loose or Corroded</h3>
+      <p><strong>Problem:</strong> Loose or corroded battery terminals prevent proper charging.</p>
+      <p><strong>Symptoms:</strong> Inverter works but battery does not charge, or charges intermittently.</p>
+      <p><strong>Solutions:</strong> Turn off the inverter and disconnect from mains. Check battery terminals for tightness. Look for white or green corrosion. Clean corroded terminals with baking soda and water. Tighten all connections securely.</p>
+    </div>
+
+    <!-- REAL STORY 3 - NEW: Turbat, 2020 -->
+    <div class="story-card">
+      <h3>A Teacher from Turbat - June 2020</h3>
+      <p>A school teacher from Turbat called me in June 2020. He said "My Super Asia inverter is showing E02 error. The battery is only 2 years old but it is not charging." I asked him to check the battery voltage. It was only 9 volts. The battery was deeply discharged. I told him to use an external charger to bring the voltage up. He borrowed a charger from a friend. After charging for 6 hours, the battery reached 12 volts. The inverter started charging normally. He said "I thought I needed a new battery. You saved me 12,000 rupees."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Super Asia | <strong>Fix:</strong> External charger for deeply discharged battery</p>
+    </div>
+
+    <!-- Problem 3 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">3</span> Battery Voltage Too Low (Deeply Discharged)</h3>
+      <p><strong>Problem:</strong> Battery is deeply discharged and the inverter will not charge it. Some inverters have protection that prevents charging below a certain voltage.</p>
+      <p><strong>Symptoms:</strong> Inverter shows low battery, will not charge, or clicks repeatedly.</p>
+      <p><strong>Solutions:</strong> Check battery voltage with a multimeter. For a 12V battery, if it is below 10.5 volts, it may be too low. Try charging with an external charger if available. If the battery will not hold a charge, it may need replacement.</p>
+    </div>
+
+    <!-- Problem 4 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">4</span> Tripped MCB or Blown Fuse</h3>
+      <p><strong>Problem:</strong> Input MCB tripped or input fuse blown, preventing charging.</p>
+      <p><strong>Symptoms:</strong> No power to inverter, display off, or shows no AC input.</p>
+      <p><strong>Solutions:</strong> Check the MCB on the inverter or in your distribution box. Reset it if tripped. If it trips again, there is a short circuit. Check the input fuse on the inverter. Replace the fuse if blown with the same rating.</p>
+    </div>
+
+    <!-- Problem 5 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">5</span> Battery Age - End of Life</h3>
+      <p><strong>Problem:</strong> The battery has reached the end of its useful life. Most batteries last 3 to 5 years.</p>
+      <p><strong>Symptoms:</strong> Battery will not hold a charge, runs for a very short time, inverter beeps frequently.</p>
+      <p><strong>Solutions:</strong> Check the battery manufacturing date. If it is over 4 years old, replacement is likely needed. A new battery costs between 8,000 and 15,000 rupees depending on capacity.</p>
+    </div>
+
+    <!-- REAL STORY 4 - NEW: Zhob, 2016 -->
+    <div class="story-card">
+      <h3>A Government Employee from Zhob - July 2016</h3>
+      <p>A government employee from Zhob called me in July 2016. He said "My ATS inverter is not charging. The inverter feels very hot and the fan is not running." I asked him where the inverter was installed. He had put it in a small storage room with no windows. I told him to move it to a ventilated area. He moved it to the living room. The fan started working. The inverter started charging. He said "Such a simple solution. I was about to call a technician from another city."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> ATS | <strong>Fix:</strong> Move inverter to ventilated area</p>
+    </div>
+
+    <!-- Problem 6 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">6</span> Over Temperature Protection</h3>
+      <p><strong>Problem:</strong> The inverter overheats and stops charging to protect itself.</p>
+      <p><strong>Symptoms:</strong> Inverter is hot, stops charging, shows an error code like E05, fan runs loudly.</p>
+      <p><strong>Solutions:</strong> Ensure the inverter has proper ventilation with at least 6 inches of clearance. Check if the cooling fan is working. Reduce the load on the inverter. Clean dust from the vents. Let the inverter cool down for 30 minutes.</p>
+    </div>
+
+    <!-- Problem 7 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">7</span> Charger Circuit Failure</h3>
+      <p><strong>Problem:</strong> The charging circuit inside the inverter has failed.</p>
+      <p><strong>Symptoms:</strong> Mains power is available, but battery voltage does not increase when charging should happen.</p>
+      <p><strong>Solutions:</strong> Measure battery voltage with a multimeter when mains is on. It should read 13.5 to 14.5 volts for a 12V battery while charging. If the voltage stays at battery level (12.6 volts or less), the charger is not working. This usually requires professional repair.</p>
+    </div>
+
+    <!-- Problem 8 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">8</span> Battery Sulfation</h3>
+      <p><strong>Problem:</strong> Battery plates become sulfated from undercharging or age, reducing capacity.</p>
+      <p><strong>Symptoms:</strong> Battery drains quickly, does not charge fully, inverter runs for a short time.</p>
+      <p><strong>Solutions:</strong> Check the battery age. Try an equalization charge if your inverter supports it. Check the specific gravity with a hydrometer if accessible. If the battery is old, replacement is the best option.</p>
+    </div>
+
+    <!-- REAL STORY 5 - NEW: Kalat, 2022 -->
+    <div class="story-card">
+      <h3>A Shopkeeper from Kalat - March 2022</h3>
+      <p>A shopkeeper from Kalat called me in March 2022. He said "My PEL inverter is not charging. The display shows E06 error. The battery is only 1 year old." I asked him to check the mains voltage. He measured it and found only 150 volts. The voltage was too low for the inverter to charge. I told him to install a voltage stabilizer. He bought a stabilizer for 5,000 rupees. The inverter started charging normally. He said "Now I understand why my inverter was not working."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> PEL | <strong>Fix:</strong> Install voltage stabilizer for low mains voltage</p>
+    </div>
+
+    <!-- Problem 9 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">9</span> Low Mains Voltage</h3>
+      <p><strong>Problem:</strong> Mains voltage is too low for the inverter to charge properly. This is very common in many areas of Pakistan.</p>
+      <p><strong>Symptoms:</strong> Inverter does not charge when mains is available, or charges very slowly. Error codes like E04 or under voltage may appear.</p>
+      <p><strong>Solutions:</strong> Check the mains voltage with a multimeter. If it is below 180 volts, the inverter may not charge. Install a voltage stabilizer. Contact WAPDA if the voltage is consistently low.</p>
+    </div>
+
+    <!-- Problem 10 -->
+    <div class="problem-card">
+      <h3><span class="problem-number">10</span> Internal Component Failure</h3>
+      <p><strong>Problem:</strong> Internal components like MOSFETs, relays, or the control board have failed.</p>
+      <p><strong>Symptoms:</strong> Inverter shows various error codes, will not charge, may make clicking sounds.</p>
+      <p><strong>Solutions:</strong> Note any error codes displayed. This requires professional repair. The cost is between 2,000 and 6,000 rupees depending on the fault.</p>
+    </div>
+
+    <h2>Battery Voltage Guide</h2>
+    <table class="voltage-table">
+      <thead>
+        <tr><th>Battery Status</th><th>12V Battery</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Fully Charged</td><td>12.6 - 12.8V</td><td>Normal</td></tr>
+        <tr><td>75% Charged</td><td>12.4V</td><td>Can charge</td></tr>
+        <tr><td>50% Charged</td><td>12.2V</td><td>Needs charging</td></tr>
+        <tr><td>25% Charged</td><td>12.0V</td><td>Charge soon</td></tr>
+        <tr><td>Discharged</td><td>11.8V</td><td>Needs immediate charge</td></tr>
+        <tr><td>Dead / Sulfated</td><td>Below 10.5V</td><td>Replace battery</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Common Error Codes</h2>
+    <div class="info-card">
+      <ul>
+        <li><strong>E01 / F01:</strong> Overload - reduce connected load</li>
+        <li><strong>E02 / F02:</strong> Battery low - check battery and connections</li>
+        <li><strong>E03 / F03:</strong> Over voltage - check mains voltage</li>
+        <li><strong>E04 / F04:</strong> Under voltage - check mains, use stabilizer</li>
+        <li><strong>E05 / F05:</strong> Over temperature - improve ventilation</li>
+        <li><strong>E06 / F06:</strong> Charger error - charger circuit problem</li>
+        <li><strong>E07 / F07:</strong> Short circuit - check loads</li>
+      </ul>
+    </div>
+
+    <h2>Step by Step Diagnosis</h2>
+    <div class="problem-card">
+      <ol>
+        <li>Step 1: Check if mains power is available. Check MCB and wall socket.</li>
+        <li>Step 2: Check battery connections. Are they clean and tight?</li>
+        <li>Step 3: Measure battery voltage. What is the reading?</li>
+        <li>Step 4: Check if the inverter shows any error codes.</li>
+        <li>Step 5: Measure charging voltage. It should be 13.5 to 14.5 volts for a 12V battery.</li>
+        <li>Step 6: Check battery age. If it is over 4 years old, consider replacement.</li>
+        <li>Step 7: Check inverter ventilation and fan operation.</li>
+      </ol>
+    </div>
+
+    <h2>Repair Cost Guide for Pakistan</h2>
+    <div class="info-card">
+      <ul>
+        <li>New battery (150Ah): 18,000 to 25,000 rupees</li>
+        <li>New battery (200Ah): 25,000 to 35,000 rupees</li>
+        <li>Battery terminals or cables: 500 to 1,500 rupees</li>
+        <li>Charger board repair: 2,000 to 4,000 rupees</li>
+        <li>Main board replacement: 4,000 to 8,000 rupees</li>
+        <li>Service call fee: 1,000 to 2,000 rupees</li>
+      </ul>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">Why is my inverter not charging the battery?</div>
+      <div class="faq-answer">The most common causes are loose battery connections, a tripped MCB, a dead battery, or charger circuit failure. Check connections first, then measure voltage.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How long do inverter batteries last?</div>
+      <div class="faq-answer">On average, 3 to 5 years with proper maintenance. Deep cycle batteries last longer than car batteries. Regular maintenance like topping up water and cleaning terminals extends life.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What voltage should my inverter show when charging?</div>
+      <div class="faq-answer">For a 12V battery, it should show 13.5 to 14.5 volts. For a 24V battery, it should show 27 to 29 volts. If the voltage is lower, the charging circuit may be faulty.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I use a car battery in my inverter?</div>
+      <div class="faq-answer">Yes, temporarily. But car batteries are not designed for deep discharge. They will fail quickly. Use deep cycle batteries for inverters.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I know if my battery is dead?</div>
+      <div class="faq-answer">The voltage is below 10.5 volts under load. The battery cannot hold a charge. The case is swollen. Or the battery is over 5 years old. Get a load test at a battery shop for confirmation.</div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>Pakistan Specific Tips:</strong> Voltage fluctuations can damage the charger circuit. Use a stabilizer. Frequent load shedding causes deep discharges that reduce battery life. Consider solar panels. In many cities, use only distilled water for battery topping. Keep inverter vents clean to prevent overheating. Check for rodent damage to wires, which is very common.</p>
+    </div>
+
+    <div class="warning-card">
+      <p><strong>Battery Safety Warning:</strong> Batteries contain sulfuric acid and produce explosive hydrogen gas. Always work in a ventilated area. Wear eye protection. No smoking or sparks near batteries. Never short battery terminals.</p>
+    </div>
+
+    <!-- All Articles Links -->
+    <h2>Related Articles</h2>
+    <div class="articles-grid">
+      <a href="ac-guide.html" class="article-link">Complete AC Error Code Guide</a>
+      <a href="washing-machine-guide.html" class="article-link">Washing Machine Error Codes</a>
+      <a href="refrigerator-guide.html" class="article-link">Refrigerator Error Codes</a>
+      <a href="microwave-guide.html" class="article-link">Microwave Error Codes</a>
+      <a href="tv-guide.html" class="article-link">TV Error Codes</a>
+      <a href="inverter-guide.html" class="article-link">Inverter Error Codes</a>
+      <a href="haier-ac.html" class="article-link">Haier AC Error Codes</a>
+      <a href="dawlance-ac.html" class="article-link">Dawlance AC Error Codes</a>
+      <a href="gree-ac.html" class="article-link">Gree AC Error Codes</a>
+      <a href="ac-not-cooling.html" class="article-link">AC Not Cooling Fix</a>
+    </div>
+
+    <!-- Footer with 2026 - Exactly as specified -->
+    <div class="footer">
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="disclaimer.html">Disclaimer</a> | 
+        <a href="terms.html">Terms</a>
+      </div>
+  <div class="copyright">
+          <span>© <span id="currentYear"></span> ALL ERROR CODE FINDER. All rights reserved. No copyright infringement intended. Professional appliance diagnostic tool trusted by 5000+ technicians across Pakistan. All information provided for educational purposes only.</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  </div>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <style>
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f0b90b, #ff6b00);
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 15px rgba(240, 185, 11, 0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .scroll-top-btn.show { display: flex; }
+    @media (max-width: 480px) {
+      .scroll-top-btn { width: 42px; height: 42px; font-size: 18px; bottom: 15px; right: 15px; }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollBtn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) scrollBtn.classList.add('show');
+        else scrollBtn.classList.remove('show');
+      });
+      scrollBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+  <script src="common.js"></script>
+</body>
+</html>

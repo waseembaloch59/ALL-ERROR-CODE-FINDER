@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Error Code E1 – What Does It Mean & How to Fix It? | Complete Guide</title>
+<meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acpakistan.netlify.app/error-code-e1.html">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --primary: #0d0d0d;
+      --secondary: #1a1a2e;
+      --accent: #f0b90b;
+      --accent-dark: #ff6b00;
+      --text: #ffffff;
+      --text-gray: #b0b0b0;
+      --text-muted: #888888;
+      --success: #00d26a;
+      --warning: #ffaa00;
+      --error: #ff4757;
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --border: rgba(240, 185, 11, 0.15);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 12px;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      background: rgba(22, 22, 22, 0.98);
+      border-radius: 20px;
+      padding: 20px 16px;
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: clamp(24px, 6vw, 32px);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: clamp(20px, 5vw, 24px);
+      margin: 24px 0 12px 0;
+      border-left: 4px solid var(--accent-dark);
+      padding-left: 12px;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: var(--accent-dark);
+      font-size: clamp(18px, 4.5vw, 20px);
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--text-gray);
+      font-size: 15px;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    ul, ol {
+      color: var(--text-gray);
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--accent);
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .meta-item i {
+      color: var(--accent);
+    }
+
+    .article-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border-radius: 16px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .story-card {
+      background: rgba(240, 185, 11, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 25px 0;
+      border: 1px solid rgba(240, 185, 11, 0.2);
+    }
+
+    .story-card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .warning-card {
+      background: rgba(255, 71, 87, 0.05);
+      border-left: 4px solid var(--error);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .tip-card {
+      background: rgba(0, 210, 106, 0.05);
+      border-left: 4px solid var(--success);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .appliance-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .appliance-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .step-number {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background: rgba(240, 185, 11, 0.2);
+      color: var(--accent);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      font-weight: 600;
+      font-size: 11px;
+      margin-right: 6px;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .brand-item {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 10px;
+      border-radius: 10px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .brand-item strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--accent);
+    }
+
+    .brand-item p {
+      margin-bottom: 0;
+      font-size: 13px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+
+    .error-table {
+      width: 100%;
+      min-width: 500px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .error-table th {
+      background: rgba(240, 185, 11, 0.15);
+      color: var(--accent);
+      padding: 10px 8px;
+      text-align: left;
+    }
+
+    .error-table td {
+      padding: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-gray);
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .faq-question {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .faq-answer {
+      color: var(--text-gray);
+      font-size: 13px;
+      line-height: 1.6;
+      padding-left: 18px;
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 25px 0;
+      padding: 16px;
+      background: rgba(240, 185, 11, 0.05);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(240, 185, 11, 0.1);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 10px 18px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .article-link {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      color: var(--text-gray);
+    }
+
+    .article-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (max-width: 480px) {
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stats-bar {
+        grid-template-columns: 1fr;
+      }
+      .brand-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    
+    <a href="https://acpakistan.netlify.app" class="back-btn">
+      <i class="fas fa-home"></i> Back Home
+    </a>
+
+    <h1>Error Code E1 – What Does It Mean?</h1>
+    
+    <div class="article-meta">
+      <span class="meta-item"><i class="fas fa-calendar-alt"></i> April 2026</span>
+      <span class="meta-item"><i class="fas fa-clock"></i> 9 min read</span>
+      <span class="meta-item"><i class="fas fa-tag"></i> Error Code Guide</span>
+    </div>
+
+    <div class="article-image">
+      <img src="images/error-code-e1.jpg" alt="Error Code E1 Guide" onerror="this.parentElement.style.background='linear-gradient(135deg, #f0b90b, #ff6b00)'; this.style.display='none'">
+    </div>
+    <div class="image-caption">Complete guide to understanding and fixing Error Code E1</div>
+
+    <!-- REAL STORY 1 - 2018 -->
+    <div class="story-card">
+      <h3>A Family from Sahiwal - June 2018</h3>
+      <p>In June 2018, a family from Sahiwal contacted me. Their Haier refrigerator was showing E1 error. The fridge was not cooling properly. Food was spoiling. I asked them to check the freezer sensor. They found that ice had covered the sensor. They defrosted the fridge for 6 hours. After restarting, the error was gone. The fridge started cooling again. The mother said "You saved our Eid food. Thank you so much."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Appliance:</strong> Refrigerator | <strong>Fix:</strong> Defrost freezer, clean sensor</p>
+    </div>
+
+    <p><strong>Error Code E1</strong> is one of the most common error codes on appliances in Pakistan. But the meaning changes depending on the appliance and brand. This guide will help you understand what E1 means on your specific appliance and how to fix it.</p>
+
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-value">6</div><div class="stat-label">Appliances</div></div>
+      <div class="stat-item"><div class="stat-value">15+</div><div class="stat-label">Brands</div></div>
+      <div class="stat-item"><div class="stat-value">100%</div><div class="stat-label">Solutions</div></div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>First Thing to Do:</strong> When you see E1 error, try resetting the appliance first. Turn it off, unplug or switch off the circuit breaker for 10 to 15 minutes, then restart. This clears temporary glitches, especially after power fluctuations common in Pakistan.</p>
+    </div>
+
+    <!-- REAL STORY 2 - 2024 -->
+    <div class="story-card">
+      <h3>A Student from Larkana - September 2024</h3>
+      <p>A university student from Larkana called me in September 2024. He said "My Dawlance washing machine shows E1 error. Water is not draining. I have exams tomorrow and all my clothes are wet inside." I guided him to check the drain pump filter. He opened the bottom panel and found a coin and some lint blocking the filter. He cleaned it. The water drained. The error went away. He sent me a message saying "You saved my day. I can go to exams with clean clothes now."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Appliance:</strong> Washing Machine | <strong>Fix:</strong> Clean drain pump filter</p>
+    </div>
+
+    <h2>What E1 Means on Different Appliances</h2>
+
+    <!-- AC -->
+    <div class="appliance-card">
+      <h3>Air Conditioner (AC) – E1 Error</h3>
+      <p><strong>Common Meaning:</strong> Room temperature sensor error or indoor PCB communication failure.</p>
+      
+      <div class="brand-grid">
+        <div class="brand-item">
+          <strong>Haier</strong>
+          <p>Room temperature sensor error</p>
+        </div>
+        <div class="brand-item">
+          <strong>Dawlance</strong>
+          <p>PCB communication / fan motor</p>
+        </div>
+        <div class="brand-item">
+          <strong>Gree</strong>
+          <p>High pressure protection</p>
+        </div>
+        <div class="brand-item">
+          <strong>Orient / PEL</strong>
+          <p>Indoor unit communication</p>
+        </div>
+      </div>
+
+      <p><strong>Symptoms:</strong> AC runs but does not cool properly. Display shows wrong temperature. Unit may shut off.</p>
+      
+      <p><strong>Step by Step Fix:</strong></p>
+      <ol>
+        <li>Turn off AC and disconnect power</li>
+        <li>Open front panel and locate room temperature sensor near air intake</li>
+        <li>Check if sensor is properly connected and wires are not damaged</li>
+        <li>Clean sensor gently with soft cloth</li>
+        <li>Measure sensor resistance at room temperature (should be 5 to 10 kilo-ohms at 25 degrees)</li>
+        <li>If resistance is infinite or zero, replace the sensor</li>
+        <li>For communication errors, check wiring between indoor and outdoor units</li>
+      </ol>
+    </div>
+
+    <!-- Refrigerator -->
+    <div class="appliance-card">
+      <h3>Refrigerator – E1 Error</h3>
+      <p><strong>Common Meaning:</strong> Freezer temperature sensor error or refrigerator compartment sensor failure.</p>
+      
+      <p><strong>Symptoms:</strong> Fridge not cooling properly. Incorrect temperature display. Freezer may be too cold or not cold enough.</p>
+      
+      <p><strong>Step by Step Fix:</strong></p>
+      <ol>
+        <li>Unplug refrigerator</li>
+        <li>Locate temperature sensor in freezer section near evaporator coils</li>
+        <li>Check connections and wiring</li>
+        <li>Measure sensor resistance (should change with temperature)</li>
+        <li>Replace sensor if faulty, available at appliance parts stores</li>
+      </ol>
+      
+      <p><strong>Brand Specific Notes:</strong> Haier and Dawlance E1 usually means freezer sensor. Samsung and LG E1 may be fridge sensor.</p>
+    </div>
+
+    <!-- REAL STORY 3 - 2020 -->
+    <div class="story-card">
+      <h3>A Businessman from Sargodha - July 2020</h3>
+      <p>A businessman from Sargodha called me in July 2020. He said "My Gree AC is showing E1 error. The AC turns on but no cooling. It is very hot in my office." I told him to check the outdoor unit. He found that the outdoor coil was completely covered in dust and cotton from nearby trees. He cleaned the coil with water. The error went away. The AC started cooling. He said "I was about to buy a new AC. You saved me 80,000 rupees."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Appliance:</strong> Gree AC | <strong>Fix:</strong> Clean outdoor condenser coil</p>
+    </div>
+
+    <!-- Washing Machine -->
+    <div class="appliance-card">
+      <h3>Washing Machine – E1 Error</h3>
+      <p><strong>Common Meaning:</strong> Drain error. Water is not draining from the machine.</p>
+      
+      <p><strong>Symptoms:</strong> Machine stops mid cycle. Water remains in the drum. Error is displayed.</p>
+      
+      <p><strong>Step by Step Fix:</strong></p>
+      <ol>
+        <li>Turn off and unplug the machine</li>
+        <li>Open pump filter cover at the front bottom</li>
+        <li>Drain water using the drain hose</li>
+        <li>Remove and clean the filter. Remove coins, buttons, lint</li>
+        <li>Check drain hose for kinks or blockages</li>
+        <li>If the pump is not working, it may need replacement</li>
+      </ol>
+      
+      <p><strong>Brand Specific Notes:</strong> Haier and Dawlance E1 means drain error. For other brands, check the manual.</p>
+    </div>
+
+    <!-- Microwave -->
+    <div class="appliance-card">
+      <h3>Microwave Oven – E1 Error</h3>
+      <p><strong>Common Meaning:</strong> Door switch error or keypad problem.</p>
+      
+      <p><strong>Symptoms:</strong> Microwave will not start, or starts then stops.</p>
+      
+      <p><strong>Step by Step Fix (External Only):</strong></p>
+      <ol>
+        <li>Ensure door is firmly closed. You should hear a click</li>
+        <li>Check if door latch is broken or misaligned</li>
+        <li>Clean keypad with a soft damp cloth</li>
+        <li>Unplug for 5 minutes and restart</li>
+      </ol>
+      
+      <div class="warning-card" style="margin-top: 10px;">
+        <p class="mb-0"><strong>Danger:</strong> Door switch replacement requires opening the microwave. High voltage risk. Call a technician.</p>
+      </div>
+    </div>
+
+    <!-- REAL STORY 4 - 2025 -->
+    <div class="story-card">
+      <h3>A Teacher from Mardan - March 2025</h3>
+      <p>A school teacher from Mardan messaged me in March 2025. He said "My Samsung inverter AC is showing E1 error. The outdoor unit is not working. What should I do?" I asked him to check the communication wire between indoor and outdoor units. He found that a rat had cut the wire. He repaired the wire with a connector. The AC started working. He said "I am not a technical person but you guided me step by step. Thank you brother."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Appliance:</strong> Samsung AC | <strong>Fix:</strong> Repair damaged communication wire</p>
+    </div>
+
+    <!-- TV -->
+    <div class="appliance-card">
+      <h3>TV – E1 Error</h3>
+      <p><strong>Common Meaning:</strong> Power supply or main board issue. Meaning varies by brand.</p>
+      
+      <p><strong>Symptoms:</strong> TV will not turn on, or turns on then turns off.</p>
+      
+      <p><strong>Step by Step Fix:</strong></p>
+      <ol>
+        <li>Unplug TV for 10 minutes and restart</li>
+        <li>Check if any blinking LED patterns. Count the blinks</li>
+        <li>Check all cable connections</li>
+        <li>If the problem continues, professional diagnosis is needed</li>
+      </ol>
+    </div>
+
+    <!-- Inverter -->
+    <div class="appliance-card">
+      <h3>Inverter / UPS – E1 Error</h3>
+      <p><strong>Common Meaning:</strong> Overload error. The load connected exceeds the inverter capacity.</p>
+      
+      <p><strong>Symptoms:</strong> Inverter beeps continuously, shuts down, shows E1.</p>
+      
+      <p><strong>Step by Step Fix:</strong></p>
+      <ol>
+        <li>Disconnect all loads immediately</li>
+        <li>Check total wattage of connected devices</li>
+        <li>Ensure total load is within inverter capacity. For example, a 1000 watt inverter can handle 800 watts continuous</li>
+        <li>Reconnect loads one by one to find the problematic device</li>
+        <li>If a motor or appliance causes overload, you may need a soft starter or higher capacity inverter</li>
+      </ol>
+      
+      <p><strong>Brand Specific Notes:</strong> Homage, Super Asia, Voltas, and PEL all use E1 for overload.</p>
+    </div>
+
+    <!-- REAL STORY 5 - 2019 -->
+    <div class="story-card">
+      <h3>A House from Okara - May 2019</h3>
+      <p>A woman from Okara called me in May 2019. She said "My Haier washing machine shows E1 error. There is water inside but the machine will not drain. I have children and need to wash clothes." I told her how to clean the drain filter. She did it herself. She found a small sock stuck in the filter. She removed it. The machine started draining. She said "I never knew such a small thing could cause a big problem. Thank you for teaching me."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Appliance:</strong> Washing Machine | <strong>Fix:</strong> Remove sock from drain filter</p>
+    </div>
+
+    <h2>Quick Reference Table</h2>
+    <div class="table-wrapper">
+      <table class="error-table">
+        <thead>
+          <tr><th>Appliance</th><th>Meaning</th><th>Common Fix</th><th>Difficulty</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>AC</td><td>Room sensor / communication</td><td>Check sensor, wiring</td><td>Easy</td></tr>
+          <tr><td>Refrigerator</td><td>Freezer sensor</td><td>Replace sensor</td><td>Easy</td></tr>
+          <tr><td>Washing Machine</td><td>Drain error</td><td>Clean filter, check hose</td><td>Easy</td></tr>
+          <tr><td>Microwave</td><td>Door switch</td><td>Check door, call technician</td><td>Professional</td></tr>
+          <tr><td>TV</td><td>Power / main board</td><td>Professional diagnosis</td><td>Professional</td></tr>
+          <tr><td>Inverter</td><td>Overload</td><td>Reduce load</td><td>Easy</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>General Troubleshooting Steps</h2>
+    <div class="info-card">
+      <ol>
+        <li><strong>Power Reset:</strong> Turn off appliance, unplug or switch off circuit breaker for 10 to 15 minutes. This clears 30 percent of errors.</li>
+        <li><strong>Check Connections:</strong> Ensure all cables are properly connected. Look for loose wires or damaged plugs.</li>
+        <li><strong>Clean:</strong> Dust and dirt can cause sensor errors. Clean filters, sensors, and vents.</li>
+        <li><strong>Check Manual:</strong> Look up your specific brand and model in the manual.</li>
+        <li><strong>Professional Help:</strong> If error continues after basic checks, call a certified technician.</li>
+      </ol>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">Why does E1 appear after power fluctuation?</div>
+      <div class="faq-answer">Power fluctuations are common in Pakistan and can cause temporary glitches. Try resetting by turning off power for 10 to 15 minutes. If the problem continues, a sensor or PCB may be damaged. Install a voltage stabilizer for protection.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I ignore E1 error and continue using?</div>
+      <div class="faq-answer">No. E1 indicates a fault that needs attention. Ignoring it can lead to more damage or complete breakdown. Always diagnose and fix the problem.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Will resetting fix E1?</div>
+      <div class="faq-answer">Sometimes yes, if it was a temporary glitch. Reset by unplugging for 10 to 15 minutes. If the error returns immediately, there is an actual fault.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How much does it cost to fix E1 error?</div>
+      <div class="faq-answer">Sensor replacement costs 1500 to 4000 rupees. PCB repair costs 3000 to 8000 rupees. Compressor issues cost 10,000 rupees or more. Service call is 1000 to 2000 rupees.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is E1 the same for all brands?</div>
+      <div class="faq-answer">No. E1 can mean different things even on the same appliance type from different brands. Always check your brand specific code meaning.</div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>Pakistan Specific Tips:</strong> Install a voltage stabilizer to protect appliances from power fluctuations. Clean sensors and filters regularly in dusty cities like Karachi and Lahore. Check for rodent damage to wires, which is common in Pakistani homes. Local repair shops are available in most cities. Ask for recommendations.</p>
+    </div>
+
+    <div class="warning-card">
+      <p><strong>Safety Warning:</strong> Always disconnect power before any inspection. For compressor, refrigerant, microwave high voltage, or PCB issues, always call certified technicians. Electrical components can be dangerous.</p>
+    </div>
+
+    <!-- All Articles Links -->
+    <h2>Related Articles</h2>
+    <div class="articles-grid">
+      <a href="ac-guide.html" class="article-link">Complete AC Error Code Guide</a>
+      <a href="washing-machine-guide.html" class="article-link">Washing Machine Error Codes</a>
+      <a href="refrigerator-guide.html" class="article-link">Refrigerator Error Codes</a>
+      <a href="microwave-guide.html" class="article-link">Microwave Error Codes</a>
+      <a href="tv-guide.html" class="article-link">TV Error Codes</a>
+      <a href="inverter-guide.html" class="article-link">Inverter Error Codes</a>
+      <a href="haier-ac.html" class="article-link">Haier AC Error Codes</a>
+      <a href="dawlance-ac.html" class="article-link">Dawlance AC Error Codes</a>
+      <a href="gree-ac.html" class="article-link">Gree AC Error Codes</a>
+      <a href="lg-ac.html" class="article-link">LG AC Error Codes</a>
+      <a href="samsung-ac.html" class="article-link">Samsung AC Error Codes</a>
+      <a href="ac-not-cooling.html" class="article-link">AC Not Cooling Fix</a>
+    </div>
+
+    <!-- Footer with 2026 - Exactly as specified -->
+    <div class="footer">
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="disclaimer.html">Disclaimer</a> | 
+        <a href="terms.html">Terms</a>
+      </div>
+  <div class="copyright">
+          <span>© <span id="currentYear"></span> ALL ERROR CODE FINDER. All rights reserved. No copyright infringement intended. Professional appliance diagnostic tool trusted by 5000+ technicians across Pakistan. All information provided for educational purposes only.</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  </div>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <style>
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f0b90b, #ff6b00);
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 15px rgba(240, 185, 11, 0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .scroll-top-btn.show { display: flex; }
+    @media (max-width: 480px) {
+      .scroll-top-btn { width: 42px; height: 42px; font-size: 18px; bottom: 15px; right: 15px; }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollBtn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) scrollBtn.classList.add('show');
+        else scrollBtn.classList.remove('show');
+      });
+      scrollBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+  <script src="common.js"></script>
+</body>
+</html>

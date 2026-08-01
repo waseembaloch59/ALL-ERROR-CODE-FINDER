@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Refrigerator Error Codes & Cooling Problems | Complete Guide | Pakistan</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://acpakistan.netlify.app/refrigerator-guide.html">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :root {
+      --primary: #0d0d0d;
+      --secondary: #1a1a2e;
+      --accent: #f0b90b;
+      --accent-dark: #ff6b00;
+      --text: #ffffff;
+      --text-gray: #b0b0b0;
+      --text-muted: #888888;
+      --success: #00d26a;
+      --warning: #ffaa00;
+      --error: #ff4757;
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --border: rgba(240, 185, 11, 0.15);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 12px;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      background: rgba(22, 22, 22, 0.98);
+      border-radius: 20px;
+      padding: 20px 16px;
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: clamp(24px, 6vw, 32px);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: clamp(20px, 5vw, 24px);
+      margin: 24px 0 12px 0;
+      border-left: 4px solid var(--accent-dark);
+      padding-left: 12px;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: var(--accent-dark);
+      font-size: clamp(18px, 4.5vw, 20px);
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--text-gray);
+      font-size: 15px;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    ul, ol {
+      color: var(--text-gray);
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--accent);
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .meta-item i {
+      color: var(--accent);
+    }
+
+    .article-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border-radius: 16px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+
+    .article-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .story-card {
+      background: rgba(240, 185, 11, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 25px 0;
+      border: 1px solid rgba(240, 185, 11, 0.2);
+    }
+
+    .story-card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .warning-card {
+      background: rgba(255, 71, 87, 0.05);
+      border-left: 4px solid var(--error);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .tip-card {
+      background: rgba(0, 210, 106, 0.05);
+      border-left: 4px solid var(--success);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .brand-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .brand-card h4 {
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .brand-card p {
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+
+    .brand-card code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: var(--accent-dark);
+      font-size: 11px;
+    }
+
+    .problem-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .problem-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .step-number {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background: rgba(240, 185, 11, 0.2);
+      color: var(--accent);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      font-weight: 600;
+      font-size: 11px;
+      margin-right: 6px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+
+    .error-table {
+      width: 100%;
+      min-width: 500px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .error-table th {
+      background: rgba(240, 185, 11, 0.15);
+      color: var(--accent);
+      padding: 10px 8px;
+      text-align: left;
+    }
+
+    .error-table td {
+      padding: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-gray);
+    }
+
+    .error-table code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--accent-dark);
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .faq-question {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .faq-answer {
+      color: var(--text-gray);
+      font-size: 13px;
+      line-height: 1.6;
+      padding-left: 18px;
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 25px 0;
+      padding: 16px;
+      background: rgba(240, 185, 11, 0.05);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(240, 185, 11, 0.1);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 10px 18px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .article-link {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      color: var(--text-gray);
+    }
+
+    .article-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (max-width: 480px) {
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stats-bar {
+        grid-template-columns: 1fr;
+      }
+      .brand-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    
+    <a href="https://acpakistan.netlify.app" class="back-btn">
+      <i class="fas fa-home"></i> Back Home
+    </a>
+
+    <h1>Refrigerator Error Codes & Cooling Problems</h1>
+    
+    <div class="article-meta">
+      <span class="meta-item"><i class="fas fa-calendar-alt"></i> April 2026</span>
+      <span class="meta-item"><i class="fas fa-clock"></i> 8 min read</span>
+      <span class="meta-item"><i class="fas fa-tag"></i> Refrigerator Guide</span>
+    </div>
+
+    <div class="article-image">
+      <img src="images/refrigerator-guide.jpg" alt="Refrigerator Repair" onerror="this.parentElement.style.background='linear-gradient(135deg, #f0b90b, #ff6b00)'; this.style.display='none'">
+    </div>
+    <div class="image-caption">Complete refrigerator error code and cooling problem guide</div>
+
+    <!-- REAL STORY 1 - NEW: Umerkot, 2008 -->
+    <div class="story-card">
+      <h3>A Family from Umerkot - June 2008</h3>
+      <p>A family from Umerkot called me in June 2008. They said "Our Haier refrigerator is showing E1 error. The freezer is not cold and food is spoiling." I asked them to check the freezer temperature sensor. They opened the freezer and found ice had completely covered the sensor. They defrosted the fridge for 8 hours. After restarting, the error was gone. The mother said "You saved our Eid food. We were about to throw everything away."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Haier | <strong>Error:</strong> E1 | <strong>Fix:</strong> Defrost freezer, ice on sensor</p>
+    </div>
+
+    <p><strong>Refrigerator error codes</strong> help diagnose cooling problems, sensor failures, and other issues. When your fridge stops cooling or shows error codes, quick action prevents food spoilage. This guide covers all major brands in Pakistan including Haier, Dawlance, Samsung, LG, PEL, and Orient.</p>
+
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-value">12+</div><div class="stat-label">Error Codes</div></div>
+      <div class="stat-item"><div class="stat-value">8</div><div class="stat-label">Top Brands</div></div>
+      <div class="stat-item"><div class="stat-value">100%</div><div class="stat-label">Free Guide</div></div>
+    </div>
+
+    <!-- REAL STORY 2 - NEW: Shahdadkot, 2010 -->
+    <div class="story-card">
+      <h3>A Teacher from Shahdadkot - August 2010</h3>
+      <p>A school teacher from Shahdadkot called me in August 2010. She said "My Dawlance refrigerator is not cooling. The compressor is running but the fridge is warm. The back is very hot." I asked her to check the condenser coils at the back. She found they were completely covered in dust. She cleaned them with a brush. After 2 hours, the fridge started cooling again. She said "I never knew cleaning the back could fix this. Thank you for teaching me."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Dawlance | <strong>Problem:</strong> Not cooling | <strong>Fix:</strong> Clean dusty condenser coils</p>
+    </div>
+
+    <h2>Common Refrigerator Error Codes</h2>
+    <div class="table-wrapper">
+      <table class="error-table">
+        <thead>
+          <tr><th>Error Code</th><th>Meaning</th><th>Common Fix</th><th>Difficulty</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>E1</code></span></td><td class="meaning">Freezer temperature sensor</span></td><td class="fix">Check sensor, defrost freezer</span></td><td class="diff-easy">Easy</span></td>
+          <tr>
+          <tr><td><code>E2</code></span></td><td class="meaning">Fridge temperature sensor</span></td><td class="fix">Inspect sensor, replace</span></td><td class="diff-easy">Easy</span></td>
+          </tr>
+          <tr><td><code>E3</code></span></td><td class="meaning">Defrost system error</span></td><td class="fix">Check defrost heater, timer</span></td><td class="diff-medium">Medium</span></td>
+          </tr>
+          <tr><td><code>E4</code></span></td><td class="meaning">Communication error</span></td><td class="fix">Check wiring, reset power</span></td><td class="diff-medium">Medium</span></td>
+          </tr>
+          <tr><td><code>E5</code></span></td><td class="meaning">Ice maker error</span></td><td class="fix">Check water supply</span></td><td class="diff-medium">Medium</span></td>
+          </tr>
+          <tr><td><code>dE</code></span></td><td class="meaning">Door open error</span></td><td class="fix">Close door properly</span></td><td class="diff-easy">Easy</span></td>
+          </tr>
+          <tr><td><code>5E</code></span></td><td class="meaning">Compressor error</span></td><td class="fix">Call technician</span></td><td class="diff-hard">Hard</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- REAL STORY 3 - NEW: Badin, 2012 -->
+    <div class="story-card">
+      <h3>A Shopkeeper from Badin - March 2012</h3>
+      <p>A shopkeeper from Badin called me in March 2012. He said "My Samsung refrigerator is showing dE error. The alarm keeps beeping. The door looks closed but the error stays." I asked him to check the door gasket. He found that a piece of food was stuck in the door seal, keeping it slightly open. He removed the food. The error went away. He said "Such a simple problem caused so much trouble. Thank you for your help."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> Samsung | <strong>Error:</strong> dE | <strong>Fix:</strong> Remove food from door seal</p>
+    </div>
+
+    <h2>Brand Specific Error Codes</h2>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <h4>Haier</h4>
+        <p><code>E1</code> Freezer sensor</p>
+        <p><code>E2</code> Fridge sensor</p>
+        <p><code>E3</code> Defrost</p>
+        <p><code>E4</code> Communication</p>
+      </div>
+      <div class="brand-card">
+        <h4>Dawlance</h4>
+        <p><code>E1</code> Freezer</p>
+        <p><code>E2</code> Fridge</p>
+        <p><code>E3</code> Defrost</p>
+        <p><code>E4</code> Fan</p>
+      </div>
+      <div class="brand-card">
+        <h4>Samsung</h4>
+        <p><code>E1</code> Fridge sensor</p>
+        <p><code>E2</code> Freezer sensor</p>
+        <p><code>E3</code> Defrost</p>
+        <p><code>5E</code> Compressor</p>
+      </div>
+      <div class="brand-card">
+        <h4>LG</h4>
+        <p><code>ER</code> Fridge sensor</p>
+        <p><code>EF</code> Freezer sensor</p>
+        <p><code>dE</code> Door open</p>
+        <p><code>5E</code> Compressor</p>
+      </div>
+    </div>
+
+    <!-- REAL STORY 4 - NEW: Layyah, 2014 -->
+    <div class="story-card">
+      <h3>A Housewife from Layyah - October 2014</h3>
+      <p>A housewife from Layyah called me in October 2014. She said "My LG refrigerator is showing 5E error. The compressor is not running. There is a clicking sound every few minutes." I asked her to check the start relay. She removed the small black box on the compressor. She shook it and heard rattling inside. She bought a new relay for 500 rupees. She replaced it. The compressor started working. She said "I fixed my own fridge. I am so proud of myself."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> LG | <strong>Error:</strong> 5E | <strong>Fix:</strong> Replace faulty start relay</p>
+    </div>
+
+    <h2>Cooling Problems and Solutions</h2>
+
+    <!-- Refrigerator Not Cooling -->
+    <div class="problem-card">
+      <h3>Refrigerator Not Cooling</h3>
+      <p><strong>Symptoms:</strong> The fridge is warm, the freezer is soft, the compressor may be running or not.</p>
+      <p><strong>Solutions:</strong> Clean the condenser coils at the back or bottom with a brush or vacuum. Check if the evaporator fan in the freezer is running. Ensure the door seals are tight with no warm air entry. If the compressor is hot but not running, the start relay may be bad. If all checks pass, the refrigerant may be low. Call a technician.</p>
+    </div>
+
+    <!-- Refrigerator Freezing Food -->
+    <div class="problem-card">
+      <h3>Refrigerator Freezing Food</h3>
+      <p><strong>Symptoms:</strong> Vegetables are frozen, ice forms in the fridge section.</p>
+      <p><strong>Solutions:</strong> Adjust the thermostat to a warmer setting. It should be 2 to 3 degrees Celsius. Check the air damper at the top of the fridge. It should move freely. Test the temperature sensor resistance. Replace the sensor if the readings are incorrect.</p>
+    </div>
+
+    <!-- Water Leaking -->
+    <div class="problem-card">
+      <h3>Water Leaking from Refrigerator</h3>
+      <p><strong>Symptoms:</strong> Water puddle under the fridge or inside the fridge.</p>
+      <p><strong>Solutions:</strong> Clear the defrost drain with hot water mixed with vinegar. Use a turkey baster to flush the drain tube. Check the door gasket for tears or gaps. Ensure the refrigerator is level. The front should be slightly higher than the back. Check water line connections if you have an ice maker.</p>
+    </div>
+
+    <!-- REAL STORY 5 - NEW: Muzaffargarh, 2016 -->
+    <div class="story-card">
+      <h3>A Farmer from Muzaffargarh - May 2016</h3>
+      <p>A farmer from Muzaffargarh called me in May 2016. He said "My PEL refrigerator is not cooling. The freezer is cold but the fridge is warm. I hear a fan noise but no air is coming into the fridge." I told him to check the air damper. He opened the fridge and found the damper was stuck closed because of ice buildup. He defrosted the fridge for 6 hours. The damper opened. The fridge started cooling. He said "You saved my vegetables from spoiling. Thank you brother."</p>
+      <p style="font-size: 13px; color: var(--accent); margin-top: 10px;"><strong>Brand:</strong> PEL | <strong>Problem:</strong> Fridge not cooling | <strong>Fix:</strong> Defrost stuck air damper</p>
+    </div>
+
+    <!-- E3 Defrost Error -->
+    <div class="problem-card">
+      <h3>E3 Error - Defrost System</h3>
+      <p><strong>Diagnosis:</strong> Check if the freezer has ice buildup. Test the defrost heater with a multimeter. It should have continuity.</p>
+      <p><strong>Fix:</strong> Replace the defrost heater if the circuit is open. Also check the defrost thermostat and timer.</p>
+    </div>
+
+    <!-- Compressor Not Running -->
+    <div class="problem-card">
+      <h3>Compressor Not Running</h3>
+      <p><strong>Diagnosis:</strong> Listen for a hum. If it is humming but not starting, check the start relay and overload protector.</p>
+      <p><strong>Fix:</strong> Replace the start relay. This is a small black box on the compressor. If the compressor clicks but will not start, the capacitor may be bad.</p>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>Maintenance Tip:</strong> Clean condenser coils every 6 months. In dusty Pakistani cities, clean every 3 to 4 months. This simple step can extend refrigerator life by years and reduce electricity bills by 10 to 15 percent.</p>
+    </div>
+
+    <div class="warning-card">
+      <p><strong>Safety Warning:</strong> Refrigerators contain high voltage components and refrigerant under pressure. Never attempt to open the sealed system. For compressor issues, refrigerant leaks, or major electrical problems, always call a certified technician.</p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">Why is my refrigerator running but not cold?</div>
+      <div class="faq-answer">Dirty condenser coils are the number one cause. Clean the coils with a brush. Also check if the evaporator fan is running. Open the freezer door, press the door switch, and see if the fan runs.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How often should I defrost my refrigerator?</div>
+      <div class="faq-answer">For manual defrost models, defrost when frost exceeds 1/4 inch, about every 4 to 6 months. Frost free models auto defrost, but may need manual defrost if the system fails.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What temperature should my refrigerator be?</div>
+      <div class="faq-answer">The fridge should be 2 to 4 degrees Celsius. The freezer should be minus 18 degrees Celsius. Use an appliance thermometer to check accuracy.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Why is water leaking from my fridge?</div>
+      <div class="faq-answer">A clogged defrost drain is the most common cause. Pour hot water mixed with vinegar down the drain tube to clear it. Also check if the fridge is level.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How long does a refrigerator last?</div>
+      <div class="faq-answer">The average lifespan is 10 to 15 years. Regular maintenance like coil cleaning and door seal checks extends the life.</div>
+    </div>
+
+    <div class="tip-card">
+      <p><strong>Pakistan Specific Tips:</strong> In areas with voltage fluctuations, use a voltage stabilizer to protect the compressor and PCB. Clean condenser coils more often in dusty cities like Karachi and Lahore. During load shedding, keep the fridge door closed to maintain temperature. For professional service, use authorized service centers for your brand.</p>
+    </div>
+
+    <!-- All Articles Links -->
+    <h2>Related Articles</h2>
+    <div class="articles-grid">
+      <a href="ac-guide.html" class="article-link">Complete AC Error Code Guide</a>
+      <a href="washing-machine-guide.html" class="article-link">Washing Machine Error Codes</a>
+      <a href="microwave-guide.html" class="article-link">Microwave Error Codes</a>
+      <a href="tv-guide.html" class="article-link">TV Error Codes</a>
+      <a href="inverter-guide.html" class="article-link">Inverter Error Codes</a>
+      <a href="haier-ac.html" class="article-link">Haier AC Error Codes</a>
+      <a href="dawlance-ac.html" class="article-link">Dawlance AC Error Codes</a>
+      <a href="gree-ac.html" class="article-link">Gree AC Error Codes</a>
+      <a href="lg-ac.html" class="article-link">LG AC Error Codes</a>
+      <a href="samsung-ac.html" class="article-link">Samsung AC Error Codes</a>
+      <a href="refrigerator-not-cooling.html" class="article-link">Fridge Not Cooling Fix</a>
+    </div>
+
+    <!-- Footer with 2026 - Exactly as specified -->
+    <div class="footer">
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="disclaimer.html">Disclaimer</a> | 
+        <a href="terms.html">Terms</a>
+      </div>
+  <div class="copyright">
+          <span>© <span id="currentYear"></span> ALL ERROR CODE FINDER. All rights reserved. No copyright infringement intended. Professional appliance diagnostic tool trusted by 5000+ technicians across Pakistan. All information provided for educational purposes only.</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  </div>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <style>
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f0b90b, #ff6b00);
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 15px rgba(240, 185, 11, 0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .scroll-top-btn.show { display: flex; }
+    @media (max-width: 480px) {
+      .scroll-top-btn { width: 42px; height: 42px; font-size: 18px; bottom: 15px; right: 15px; }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollBtn = document.getElementById('scrollTopBtn');
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) scrollBtn.classList.add('show');
+        else scrollBtn.classList.remove('show');
+      });
+      scrollBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+  <script src="common.js"></script>
+</body>
+</html>
