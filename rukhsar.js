@@ -1,14 +1,14 @@
-// Firebase Configuration - USE THIS COMPLETE CONFIG
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCnA5olPZYbOzWGcuAlZJC-_CAV55WbuYc",
-    authDomain: "all-error-code-findr.firebaseapp.com",
-    databaseURL: "https://all-error-code-findr-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "all-error-code-findr",
-    storageBucket: "all-error-code-findr.firebasestorage.app",
-    messagingSenderId: "1062242770204",
-    appId: "1:1062242770204:web:a6edead74c2d80d5386ed9",
-    measurementId: "G-JCXZNKEGC3"
-  };
+  apiKey: "AIzaSyCnA5olPZYbOzWGcuAlZJC-_CAV55WbuYc",
+  authDomain: "all-error-code-findr.firebaseapp.com",
+  databaseURL: "https://all-error-code-findr-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "all-error-code-findr",
+  storageBucket: "all-error-code-findr.firebasestorage.app",
+  messagingSenderId: "1062242770204",
+  appId: "1:1062242770204:web:a6edead74c2d80d5386ed9",
+  measurementId: "G-JCXZNKEGC3"
+};
 // Firebase variables
 let firebaseApp, firebaseAuth, firebaseDb, firebaseStorage;
 let currentUser = null;
