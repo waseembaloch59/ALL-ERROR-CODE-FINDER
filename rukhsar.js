@@ -1,15 +1,14 @@
 // Firebase Configuration - USE THIS COMPLETE CONFIG
 const firebaseConfig = {
-  apiKey: "AIzaSyC_ua8fWjldA-M2RFjGzW34FGpBZkCx4FE",
-  authDomain: "all-error-code-finder.firebaseapp.com",
-  databaseURL: "https://all-error-code-finder-default-rtdb.firebaseio.com",
-  projectId: "all-error-code-finder",
-  storageBucket: "all-error-code-finder.firebasestorage.app",
-  messagingSenderId: "463038418551",
-  appId: "1:463038418551:web:6ff5870912d23891d50072",
-  measurementId: "G-H0B5FFE3FH"
-};
-
+    apiKey: "AIzaSyCnA5olPZYbOzWGcuAlZJC-_CAV55WbuYc",
+    authDomain: "all-error-code-findr.firebaseapp.com",
+    databaseURL: "https://all-error-code-findr-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "all-error-code-findr",
+    storageBucket: "all-error-code-findr.firebasestorage.app",
+    messagingSenderId: "1062242770204",
+    appId: "1:1062242770204:web:a6edead74c2d80d5386ed9",
+    measurementId: "G-JCXZNKEGC3"
+  };
 // Firebase variables
 let firebaseApp, firebaseAuth, firebaseDb, firebaseStorage;
 let currentUser = null;
