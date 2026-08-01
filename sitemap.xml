@@ -5,9 +5,9 @@
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
     <!-- ==================== MAIN HOME PAGE ==================== -->
-    <!-- URL must match canonical: https://acpakistan.netlify.app/ (NOT /index.html) -->
+    <!-- URL must match canonical: all-error-code-findr.web.app/ (NOT /index.html) -->
     <url>
-        <loc>https://acpakistan.netlify.app/</loc>
+        <loc>all-error-code-findr.web.app/</loc>
         <lastmod>2026-06-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -15,37 +15,37 @@
 
     <!-- ==================== MAIN APPLIANCE GUIDES (6 PAGES) ==================== -->
     <url>
-        <loc>https://acpakistan.netlify.app/ac-guide.html</loc>
+        <loc>all-error-code-findr.web.app/ac-guide.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/washing-machine-guide.html</loc>
+        <loc>all-error-code-findr.web.app/washing-machine-guide.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/refrigerator-guide.html</loc>
+        <loc>all-error-code-findr.web.app/refrigerator-guide.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/microwave-guide.html</loc>
+        <loc>all-error-code-findr.web.app/microwave-guide.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/tv-guide.html</loc>
+        <loc>all-error-code-findr.web.app/tv-guide.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/inverter-guide.html</loc>
+        <loc>all-error-code-findr.web.app/inverter-guide.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -53,43 +53,43 @@
 
     <!-- ==================== BRAND-SPECIFIC AC ERROR CODE PAGES (7 PAGES) ==================== -->
     <url>
-        <loc>https://acpakistan.netlify.app/haier-ac.html</loc>
+        <loc>all-error-code-findr.web.app/haier-ac.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/dawlance-ac.html</loc>
+        <loc>all-error-code-findr.web.app/dawlance-ac.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/gree-ac.html</loc>
+        <loc>all-error-code-findr.web.app/gree-ac.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/lg-ac.html</loc>
+        <loc>all-error-code-findr.web.app/lg-ac.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/samsung-ac.html</loc>
+        <loc>all-error-code-findr.web.app/samsung-ac.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/orient-ac.html</loc>
+        <loc>all-error-code-findr.web.app/orient-ac.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/pel-ac.html</loc>
+        <loc>all-error-code-findr.web.app/pel-ac.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -97,43 +97,43 @@
 
     <!-- ==================== COMMON PROBLEM ARTICLES (7 PAGES) ==================== -->
     <url>
-        <loc>https://acpakistan.netlify.app/washing-machine-not-spinning.html</loc>
+        <loc>all-error-code-findr.web.app/washing-machine-not-spinning.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/refrigerator-not-cooling.html</loc>
+        <loc>all-error-code-findr.web.app/refrigerator-not-cooling.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/ac-not-cooling.html</loc>
+        <loc>all-error-code-findr.web.app/ac-not-cooling.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/microwave-not-heating.html</loc>
+        <loc>all-error-code-findr.web.app/microwave-not-heating.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/tv-no-picture.html</loc>
+        <loc>all-error-code-findr.web.app/tv-no-picture.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/inverter-not-charging.html</loc>
+        <loc>all-error-code-findr.web.app/inverter-not-charging.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/error-code-e1.html</loc>
+        <loc>all-error-code-findr.web.app/error-code-e1.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -141,31 +141,31 @@
 
     <!-- ==================== LEGAL & INFORMATION PAGES (5 PAGES) ==================== -->
     <url>
-        <loc>https://acpakistan.netlify.app/about.html</loc>
+        <loc>all-error-code-findr.web.app/about.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/contact.html</loc>
+        <loc>all-error-code-findr.web.app/contact.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/privacy.html</loc>
+        <loc>all-error-code-findr.web.app/privacy.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/disclaimer.html</loc>
+        <loc>all-error-code-findr.web.app/disclaimer.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://acpakistan.netlify.app/terms.html</loc>
+        <loc>all-error-code-findr.web.app/terms.html</loc>
         <lastmod>2026-06-01</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>

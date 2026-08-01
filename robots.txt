@@ -7,4 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://acpakistan.netlify.app/sitemap.xml
+Sitemap: all-error-code-findr.web.app/sitemap.xml
