@@ -1,1 +1,28 @@
+Node modules (agar kabhi use ho)
 
+node_modules/
+
+Firebase logs
+
+firebase-debug.log
+firebase-debug.*.log
+
+Environment files (sensitive data)
+
+.env
+.env.*
+
+OS files
+
+.DS_Store
+Thumbs.db
+
+Temporary files
+
+*.tmp
+*.log
+
+Optional: agar future me build folder use karo
+
+dist/
+build/
